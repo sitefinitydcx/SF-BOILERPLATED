@@ -1,0 +1,101 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" %>
+
+<%@ Register Assembly="Telerik.Sitefinity" Namespace="Telerik.Sitefinity.Web.UI" TagPrefix="sf" %>
+<%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
+<%@ Import Namespace="Telerik.Sitefinity.Localization" %>
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head id="Head" runat="server">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <meta name="application-name" content="Website applicationname shown above taskbar preview">
+    <meta name="msapplication-tooltip" content="Additional tooltip text">
+    <meta name="msapplication-window" content="width=1024;height=768" />
+    <meta name="msapplication-navbutton-color" content="#222222" />
+    <meta name="msapplication-starturl" content="./">
+    <meta name="title" content="title">
+    <meta name="author" content="authorname">
+    <meta name="version" content="5.0.2523.00">
+    <meta name="description" content="description">
+    <title></title>
+    <script src="/Sitefinity/WebsiteTemplates/Thunder/JS/script.top.min.js"></script>
+</head>
+<!--  ========================================================================== -->
+<!--  upd: 26/03/2012 | Based on h5bp.com v3.0.2 | credits go where credits due  -->
+<!--  ========================================================================== -->
+<!-- TODO: Change all the lang="en" to the correct language of the Masterpage    -->
+<!-- TODO: Update paths to script.top.min.js (should contain Modernizr)          -->
+<!-- TODO: Update paths to script.bottom.min.js (should contain custom js)       -->
+<!-- TODO: Change the meta tags above                                            -->
+<!--                                                                             -->
+<!-- TODO: Change UA-XXXXX-X to be your site's ID in the Async Google Analytics  -->
+<!--       snippet or remove and insert as widget inside Sitefinity.             -->
+<!-- TODO: Remove firstline after <body> if supporting IE6                       -->
+<!--  ========================================================================== -->
+<body class="standard">
+    <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>not</em> supported. <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+    <a accesskey="s" href="#cpw_content" id="sfSkip" class="visuallyhidden" ><asp:Literal ID="skipToMainContentLiteral" runat="server" Text='<%$Resources:PageResources, SkipToTheMainContent %>' /></a>
+    <div id="PublicWrapper" class="sfPublicWrapper">
+        <!-- header -->
+        <div id="HeaderWrapper" class="sf_cols" role="region">
+            <header id="cpw_header" role="banner" class="sf_colsOut">
+                    <asp:ContentPlaceHolder ID="cph_header" runat="server" />
+            </header>
+            <nav id="cpw_nav" role="navigation" class="sf_colsOut">
+                    <asp:ContentPlaceHolder ID="cph_nav" runat="server" />
+            </nav>
+        </div>
+        <!-- banner -->
+        <section id="BannerWrapper" class="sf_cols" role="region">
+            <div id="cpw_banner" class="sf_colsOut" role="presentation">
+                    <asp:ContentPlaceHolder ID="cph_banner" runat="server" />
+            </div>
+        </section>
+        <!-- content -->
+        <section id="ContentWrapper" class="sf_cols" role="region">
+            <!-- cpw_content is referenced by the accesibility accesskey 's' above -->
+            <div id="cpw_content" role="main" class="sf_colsOut">
+                <asp:ContentPlaceHolder ID="cph_content" runat="server" />
+            </div>
+        </section>
+        <!-- footer -->
+        <footer id="FooterWrapper" class="sf_cols" role="region">
+                <div id="cpw_footer" role="complementary" class="sf_colsOut" >
+                    <asp:ContentPlaceHolder ID="cph_footer" runat="server" />
+                </div>
+                <div id="cpw_copyright" role="contentinfo" class="sf_colsOut">
+                    <asp:ContentPlaceHolder ID="cph_copyright" runat="server" />
+                </div>
+        </footer>
+    </div>
+    <!-- ScriptWrapper -->
+    <div id="ScriptWrapper">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script>            window.jQuery || document.write('<script src="/Sitefinity/WebsiteTemplates/Thunder/JS/jquery-1.7.1.min.js"><\/script>')</script>
+        <script>
+            var _gaq = [['_setAccount', 'UA-XXXXX-X'], ['_trackPageview']];
+            (function (d, t) {
+                var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
+                g.src = ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js';
+                s.parentNode.insertBefore(g, s)
+            } (document, 'script'));
+                </script>
+        <!-- custom scripts -->
+        <script defer="defer" src="/Sitefinity/WebsiteTemplates/Thunder/JS/script.bottom.min.js"></script>
+        <asp:ContentPlaceHolder ID="cph_scriptsandstyles" runat="server" >
+            <hr />
+            -- ONLY PLACE STYLE WIDGETS AND SCRIPT WIDGETS BELOW THIS AREA --
+            <hr />
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

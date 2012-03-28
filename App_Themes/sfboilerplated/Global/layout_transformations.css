@@ -1,0 +1,32 @@
+﻿/* ============================================================================ */
+/* upd: 27/03/2012 | Based on h5bp.com v3.0.2 | layout_transformations.yui.less */
+/* ============================================================================ */
+@media only screen and (max-width:480px){body{min-width:0!important}
+.sfPublicWrapper{width:auto!important}
+.sf_colsOut.sf_2cols_1_33,.sf_colsOut.sf_2cols_2_67,.sf_colsOut.sf_2cols_1_67,.sf_colsOut.sf_2cols_2_33,.sf_colsOut.sf_2cols_1_50,.sf_colsOut.sf_2cols_2_50,.sf_colsOut.sf_2cols_1_25,.sf_colsOut.sf_2cols_2_75,.sf_colsOut.sf_2cols_1_75,.sf_colsOut.sf_2cols_2_25{width:100%!important}
+.sf_colsOut.sf_2cols_2_67 .sf_colsIn,.sf_colsOut.sf_2cols_2_33 .sf_colsIn,.sf_colsOut.sf_2cols_2_50 .sf_colsIn,.sf_colsOut.sf_2cols_2_75 .sf_colsIn,.sf_colsOut.sf_2cols_2_25 .sf_colsIn{margin-left:0!important;margin-right:0!important}
+.sf_colsOut.sf_3cols_1_33,.sf_colsOut.sf_3cols_2_34,.sf_colsOut.sf_3cols_3_33,.sf_colsOut.sf_3cols_1_25,.sf_colsOut.sf_3cols_2_50,.sf_colsOut.sf_3cols_3_25{width:100%!important}
+.sf_colsOut.sf_3cols_2_34 .sf_colsIn,.sf_colsOut.sf_3cols_3_33 .sf_colsIn,.sf_colsOut.sf_3cols_2_50 .sf_colsIn,.sf_colsOut.sf_3cols_3_25 .sf_colsIn{margin-left:0!important;margin-right:0!important}
+.sf_colsOut.sf_4cols_1_25,.sf_colsOut.sf_4cols_2_25,.sf_colsOut.sf_4cols_3_25,.sf_colsOut.sf_4cols_4_25{width:100%!important}
+.sf_colsOut.sf_4cols_2_25 .sf_colsIn,.sf_colsOut.sf_4cols_3_25 .sf_colsIn,.sf_colsOut.sf_4cols_4_25 .sf_colsIn{margin-left:0!important;margin-right:0!important}
+.sf_colsOut.sf_4cols_1_25,.sf_colsOut.sf_4cols_2_25,.sf_colsOut.sf_4cols_3_25,.sf_colsOut.sf_4cols_4_25{width:100%!important}
+.sf_colsOut.sf_4cols_2_25 .sf_colsIn,.sf_colsOut.sf_4cols_3_25 .sf_colsIn,.sf_colsOut.sf_4cols_4_25 .sf_colsIn{margin-left:0!important;margin-right:0!important}
+.sf_colsOut.sf_5cols_1_20,.sf_colsOut.sf_5cols_2_20,.sf_colsOut.sf_5cols_3_20,.sf_colsOut.sf_5cols_4_20,.sf_colsOut.sf_5cols_5_20{width:100%!important}
+.sf_colsOut.sf_5cols_2_20 .sf_colsIn,.sf_colsOut.sf_5cols_4_20 .sf_colsIn{margin-left:0!important;margin-right:0!important}
+}
+/* ============================================================================ */
+@media print{*{background:transparent!important;color:black!important;box-shadow:none!important;text-shadow:none!important;filter:none!important;-ms-filter:none!important}
+a,a:visited{text-decoration:underline}
+a[href]:after{content:" (" attr(href) ")"}
+abbr[title]:after{content:" (" attr(title) ")"}
+.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}
+pre,blockquote{border:1px solid #999;page-break-inside:avoid}
+thead{display:table-header-group}
+tr,img{page-break-inside:avoid}
+img{max-width:100%!important}
+p,h2,h3{orphans:3;widows:3}
+h2,h3{page-break-after:avoid}
+@page{margin:.5cm}
+.sfPageBrowseAndEditToolbarWrp,.sfPrintBtn{display:none}
+.sfordersListDetailView{height:auto!important}
+}
