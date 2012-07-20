@@ -1,0 +1,97 @@
+﻿<%@ Master Language="C#" %>
+
+<!doctype html>
+<html lang="en">
+<head id="Head" runat="server">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta http-equiv="cleartype" content="on">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="application-name" content="Website applicationname shown above taskbar preview">
+  <meta name="msapplication-tooltip" content="Additional tooltip text">
+  <meta name="msapplication-window" content="width=1024;height=768" />
+  <meta name="msapplication-starturl" content="./">
+  <meta name="msapplication-navbutton-color" content="#E72C53" />
+  <meta name="msapplication-TileColor" content="#E72C53" />
+  <meta name="msapplication-TileImage" content="/Sitefinity/WebsiteTemplates/Bootstrap/App_Themes/Bootstrap/Icons/apple-touch-icon-144-precomposed.pn" />
+  <link rel="shortcut icon" href="/Sitefinity/WebsiteTemplates/Bootstrap/App_Themes/Bootstrap/Icons/favicon.ico">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/Sitefinity/WebsiteTemplates/Bootstrap/App_Themes/Bootstrap/Icons/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/Sitefinity/WebsiteTemplates/Bootstrap/App_Themes/Bootstrap/Icons/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/Sitefinity/WebsiteTemplates/Bootstrap/App_Themes/Bootstrap/Icons/apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="/Sitefinity/WebsiteTemplates/Bootstrap/App_Themes/Bootstrap/Icons/apple-touch-icon-57-precomposed.png">
+
+  <meta name="title" content="Twitter Bootstrap template for Sitefinity">
+  <meta name="author" content="jbokkers">
+  <meta name="version" content="5.1.3210.00">
+  <meta name="description" content="description">
+  <title></title>
+  <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body class="main-body">
+  <form id="form1" runat="server">
+  <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+  <div id="PublicWrapper" class="sfPublicWrapper">
+    <!-- header navigation -->
+    <nav id="HeaderWrapper" class="sf_cols" role="navigation">
+      <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="#">Project name</a>
+            <div class="nav-collapse">
+              <asp:ContentPlaceHolder ID="cph_navigation" runat="server" />
+              <!-- put the commented ul-li inside the cph_navigation placeholder inside sitefinity for proper menu -->
+              <!--
+              <ul class="nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+              -->
+            </div>
+            <!--/.nav-collapse -->
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- content -->
+    <section id="ContentWrapper" class="sf_cols" role="region">
+      <div class="container">
+        <asp:ContentPlaceHolder ID="cph_content" runat="server" />
+      </div>
+    </section>
+  </div>
+  <!-- ScriptWrapper -->
+  <div id="ScriptWrapper">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script>            window.jQuery || document.write('<script src="/Sitefinity/WebsiteTemplates/Bootstrap/JS/jquery-1.7.2.min.js"><\/script>')</script>
+    <script src="/Sitefinity/WebsiteTemplates/Bootstrap/JS/bootstrap-transition.js"></script>
+    <script src="/Sitefinity/WebsiteTemplates/Bootstrap/JS/bootstrap-alert.js"></script>
+    <script src="/Sitefinity/WebsiteTemplates/Bootstrap/JS/bootstrap-modal.js"></script>
+    <script src="/Sitefinity/WebsiteTemplates/Bootstrap/JS/bootstrap-dropdown.js"></script>
+    <script src="/Sitefinity/WebsiteTemplates/Bootstrap/JS/bootstrap-scrollspy.js"></script>
+    <script src="/Sitefinity/WebsiteTemplates/Bootstrap/JS/bootstrap-tab.js"></script>
+    <script src="/Sitefinity/WebsiteTemplates/Bootstrap/JS/bootstrap-tooltip.js"></script>
+    <script src="/Sitefinity/WebsiteTemplates/Bootstrap/JS/bootstrap-popover.js"></script>
+    <script src="/Sitefinity/WebsiteTemplates/Bootstrap/JS/bootstrap-button.js"></script>
+    <script src="/Sitefinity/WebsiteTemplates/Bootstrap/JS/bootstrap-collapse.js"></script>
+    <script src="/Sitefinity/WebsiteTemplates/Bootstrap/JS/bootstrap-carousel.js"></script>
+    <script src="/Sitefinity/WebsiteTemplates/Bootstrap/JS/bootstrap-typeahead.js"></script>
+    <!-- custom scripts -->
+    <asp:ContentPlaceHolder ID="cph_scriptsandstyles" runat="server">
+      <hr />
+      -- ONLY PLACE STYLE WIDGETS AND SCRIPT WIDGETS BELOW THIS AREA --
+      <hr />
+    </asp:ContentPlaceHolder>
+  </div>
+  </form>
+</body>
+</html>
+

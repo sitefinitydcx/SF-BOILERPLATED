@@ -1,0 +1,268 @@
+﻿/*!
+ * ============================================================================ 
+ * SF|Bootstrapped based on Bootstrap v2.0.4
+ * ============================================================================ 
+ */
+
+@import "reset.less";
+
+/*#region variables */
+/* ============================================================================ */
+// Sprite icons path
+@iconSpritePath:          "../Images/glyphicons-halflings.png";
+@iconWhiteSpritePath:     "../Images/glyphicons-halflings-white.png";
+// -------------------------
+// Grays
+// -------------------------
+@black:                 #000;
+@grayDarker:            #222;
+@grayDark:              #333;
+@gray:                  #555;
+@grayLight:             #999;
+@grayLighter:           #eee;
+@white:                 #fff;
+// Accent colors
+// -------------------------
+@blue:                  #049cdb;
+@blueDark:              #0064cd;
+@green:                 #46a546;
+@red:                   #9d261d;
+@yellow:                #ffc40d;
+@orange:                #f89406;
+@pink:                  #c3325f;
+@purple:                #7a43b6;
+// Scaffolding
+// -------------------------
+@bodyBackground:        @white;
+@textColor:             @grayDark;
+// Links
+// -------------------------
+@linkColor:             #08c;
+@linkColorHover:        darken(@linkColor, 15%);
+// Typography
+// -------------------------
+@sansFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif;
+@serifFontFamily:       Georgia, "Times New Roman", Times, serif;
+@monoFontFamily:        Menlo, Monaco, Consolas, "Courier New", monospace;
+@baseFontSize:          13px;
+@baseFontFamily:        @sansFontFamily;
+@baseLineHeight:        18px;
+@altFontFamily:         @serifFontFamily;
+@headingsFontFamily:    inherit; // empty to use BS default, @baseFontFamily
+@headingsFontWeight:    bold;    // instead of browser default, bold
+@headingsColor:         inherit; // empty to use BS default, @textColor
+// Tables
+// -------------------------
+@tableBackground:                   transparent; // overall background-color
+@tableBackgroundAccent:             #f9f9f9; // for striping
+@tableBackgroundHover:              #f5f5f5; // for hover
+@tableBorder:                       #ddd; // table and cell border
+
+// Buttons
+// -------------------------
+@btnBackground:                     @white;
+@btnBackgroundHighlight:            darken(@white, 10%);
+@btnBorder:                         #ccc;
+
+@btnPrimaryBackground:              @linkColor;
+@btnPrimaryBackgroundHighlight:     spin(@btnPrimaryBackground, 15%);
+
+@btnInfoBackground:                 #5bc0de;
+@btnInfoBackgroundHighlight:        #2f96b4;
+
+@btnSuccessBackground:              #62c462;
+@btnSuccessBackgroundHighlight:     #51a351;
+
+@btnWarningBackground:              lighten(@orange, 15%);
+@btnWarningBackgroundHighlight:     @orange;
+
+@btnDangerBackground:               #ee5f5b;
+@btnDangerBackgroundHighlight:      #bd362f;
+
+@btnInverseBackground:              @gray;
+@btnInverseBackgroundHighlight:     @grayDarker;
+
+// Forms
+// -------------------------
+@inputBackground:               @white;
+@inputBorder:                   #ccc;
+@inputBorderRadius:             3px;
+@inputDisabledBackground:       @grayLighter;
+@formActionsBackground:         #f5f5f5;
+
+// Dropdowns
+// -------------------------
+@dropdownBackground:            @white;
+@dropdownBorder:                rgba(0,0,0,.2);
+@dropdownLinkColor:             @grayDark;
+@dropdownLinkColorHover:        @white;
+@dropdownLinkBackgroundHover:   @linkColor;
+@dropdownDividerTop:            #e5e5e5;
+@dropdownDividerBottom:         @white;
+
+// COMPONENT VARIABLES
+// --------------------------------------------------
+
+// Z-index master list
+// -------------------------
+// Used for a bird's eye view of components dependent on the z-axis
+// Try to avoid customizing these :)
+@zindexDropdown:          1000;
+@zindexPopover:           1010;
+@zindexTooltip:           1020;
+@zindexFixedNavbar:       1030;
+@zindexModalBackdrop:     1040;
+@zindexModal:             1050;
+
+
+// Input placeholder text color
+// -------------------------
+@placeholderText:         @grayLight;
+
+// Hr border color
+// -------------------------
+@hrBorder:                @grayLighter;
+
+// Navbar
+// -------------------------
+@navbarHeight:                    40px;
+@navbarBackground:                @grayDarker;
+@navbarBackgroundHighlight:       @grayDark;
+
+@navbarText:                      @grayLight;
+@navbarLinkColor:                 @grayLight;
+@navbarLinkColorHover:            @white;
+@navbarLinkColorActive:           @navbarLinkColorHover;
+@navbarLinkBackgroundHover:       transparent;
+@navbarLinkBackgroundActive:      @navbarBackground;
+
+@navbarSearchBackground:          lighten(@navbarBackground, 25%);
+@navbarSearchBackgroundFocus:     @white;
+@navbarSearchBorder:              darken(@navbarSearchBackground, 30%);
+@navbarSearchPlaceholderColor:    #ccc;
+@navbarBrandColor:                @navbarLinkColor;
+
+// Hero unit
+// -------------------------
+@heroUnitBackground:              @grayLighter;
+@heroUnitHeadingColor:            inherit;
+@heroUnitLeadColor:               inherit;
+
+// Form states and alerts
+// -------------------------
+@warningText:             #c09853;
+@warningBackground:       #fcf8e3;
+@warningBorder:           darken(spin(@warningBackground, -10), 3%);
+
+@errorText:               #b94a48;
+@errorBackground:         #f2dede;
+@errorBorder:             darken(spin(@errorBackground, -10), 3%);
+
+@successText:             #468847;
+@successBackground:       #dff0d8;
+@successBorder:           darken(spin(@successBackground, -10), 5%);
+
+@infoText:                #3a87ad;
+@infoBackground:          #d9edf7;
+@infoBorder:              darken(spin(@infoBackground, -10), 7%);
+
+// GRID
+// --------------------------------------------------
+
+// Default 940px grid
+// -------------------------
+@gridColumns:             12;
+@gridColumnWidth:         60px;
+@gridGutterWidth:         20px;
+@gridRowWidth:            (@gridColumns * @gridColumnWidth) + (@gridGutterWidth * (@gridColumns - 1));
+
+// Fluid grid
+// -------------------------
+@fluidGridColumnWidth:    6.382978723%;
+@fluidGridGutterWidth:    2.127659574%;
+/* ============================================================================ */
+/*#endregion */
+
+/*#region static bootstrap */
+/* ============================================================================ */
+@import "mixins.less";
+@import "scaffolding.less";
+@import "grid.less";
+@import "layouts.less";
+@import "type.less";
+@import "code.less";
+@import "forms.less";
+@import "tables.less";
+@import "sprites.less";
+@import "dropdowns.less";
+@import "wells.less";
+@import "component-animations.less";
+@import "close.less";
+@import "buttons.less";
+@import "button-groups.less";
+@import "alerts.less"; 
+@import "navs.less";
+@import "navbar.less";
+@import "breadcrumbs.less";
+@import "pagination.less";
+@import "pager.less";
+@import "modals.less";
+@import "tooltip.less";
+@import "popovers.less";
+@import "thumbnails.less";
+@import "labels-badges.less";
+@import "progress-bars.less";
+@import "accordion.less";
+@import "carousel.less";
+@import "hero-unit.less";
+@import "utilities.less"; // Has to be last to override when necessary
+.sfspan (@columns) {width: (@gridColumnWidth * @columns) + (@gridGutterWidth * (@columns - 1));}
+.sf_cols{.row;}
+/* ============================================================================ */
+/*#endregion */
+
+
+/*#region responsive bootstrap */
+/* ============================================================================ */
+// Utility classes
+@import "responsive-utilities.less";
+@import "responsive-767px-max.less";
+@import "responsive-768px-979px.less";
+@import "responsive-1200px-min.less";
+@import "responsive-navbar.less";
+.sfspan (@columns) {
+width: (@fluidGridColumnWidth * @columns) + (@fluidGridGutterWidth * (@columns - 1));
+*width: (@fluidGridColumnWidth * @columns) + (@fluidGridGutterWidth * (@columns - 1)) - (.5 / @gridRowWidth * 100 * 1%); }
+.sf_cols{.row-fluid;}
+/* ============================================================================ */
+/*#endregion */
+
+
+/*#region sitefinity reset */
+/* ============================================================================ */
+body.sfPageEditor{background:#fff}
+.clearfix:before, .clearfix:after {content: ""; display: table;} .clearfix:after {clear: both;} 
+.ScriptWrapper, .sfDisplayNone {display:none;} 
+.sf_block {display:block;}
+.sf_cols {clear:both; display:block; margin:0; padding:0; width:auto;  _width:auto;}
+.sf_cols:after {clear:both; content:""; display:block; font-size:1px; height:0; visibility:hidden;}
+.sfClearfix:after {clear:both; content:""; display:block; font-size:1px; height:0; visibility:hidden;}
+* .sf_colsOut+.sf_colsOut{*margin-left:-1px!important;}
+* html .sf_cols{*display:block;}
+* html .sf_cols .sf_colsOut{*display:inline;}
+* .sf_colsOut+.sf_colsOut{*margin-left:-1px!important;}
+[class*="sf_1cols_"], [class*="sf_2cols_"], [class*="sf_3cols_"], [class*="sf_4cols_"], [class*="sf_5cols_"] {display: block; width: auto; float:left;}
+.sfPageEditor .sf_colsIn{width:100%;}
+.sf_1col_1_100 {.sfspan(12);margin-left: 10px;}
+.sf_2cols_1_25, .sf_3cols_1_25, .sf_3cols_3_25, .sf_2cols_2_25, .sf_4cols_1_25,.sf_4cols_2_25,.sf_4cols_3_25,.sf_4cols_4_25{ .sfspan(3);margin-left: 10px;}
+.sf_2cols_1_33, .sf_2cols_2_33 , .sf_3cols_1_33, .sf_3cols_3_33, .sf_3cols_2_34{ .sfspan(4);margin-left: 10px;}
+.sf_2cols_1_50, .sf_2cols_2_50, .sf_3cols_2_50{ .sfspan(6);margin-left: 10px;}
+.sf_2cols_1_67,.sf_2cols_2_67  { .sfspan(8);margin-left: 10px;}
+.sf_2cols_1_75, .sf_2cols_2_75 { .sfspan(9);margin-left: 10px;}
+.sf_5cols_1_20,.sf_5cols_2_20,.sf_5cols_3_20,.sf_5cols_4_20,.sf_5cols_5_20 {float:left; margin:0; width:20%;margin-left: 10px;} 
+/* ============================================================================ */
+/*#endregion */
+
+/* ============================================================================ */
+.sfimageWrp {overflow-x: hidden;} 
+.sfimageWrp img, .sfContentBlock img{width:auto; max-width:100%; height:auto;} 
