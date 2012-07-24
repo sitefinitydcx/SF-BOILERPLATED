@@ -1,6 +1,6 @@
 ﻿/*!
  * ============================================================================ 
- * SF|Bootstrapped based on Bootstrap v2.0.4
+ * SF|Bootstrapped based on Bootstrap v2.0.4 | sfnormalize.yui.less
  * ============================================================================ 
  */
 
@@ -217,7 +217,9 @@
 @import "_bootstrap/hero-unit.less";
 @import "_bootstrap/utilities.less"; // Has to be last to override when necessary
 .sfspan (@columns) {width: (@gridColumnWidth * @columns) + (@gridGutterWidth * (@columns - 1));}
-.sf_cols{.row;}
+.sf_cols{ margin-left: @gridGutterWidth * -1;
+		  .clearfix();
+		}
 /* ============================================================================ */
 /*#endregion */
 
@@ -233,7 +235,9 @@
 .sfspan (@columns) {
 width: (@fluidGridColumnWidth * @columns) + (@fluidGridGutterWidth * (@columns - 1));
 *width: (@fluidGridColumnWidth * @columns) + (@fluidGridGutterWidth * (@columns - 1)) - (.5 / @gridRowWidth * 100 * 1%); }
-.sf_cols{.row-fluid;}
+.sf_cols{ width: 100%;
+		  .clearfix();
+		}
 /* ============================================================================ */
 /*#endregion */
 
