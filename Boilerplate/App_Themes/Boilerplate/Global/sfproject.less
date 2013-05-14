@@ -1,6 +1,6 @@
 ﻿/*!
  * ============================================================================ 
- * SF|Boilerplated based on H5BP v4.0.2 | sfproject.yui.less
+ * SF|Boilerplated based on H5BP v4.2.0 | sfproject.less
  * ============================================================================ 
  */
 
@@ -8,16 +8,17 @@
 /*  -----------------------------------------------------------------------*/
 @wrapper_font-size: 12px;
 @wrapper_line-height: 18px;
-@wrapper_font-family: Arial,Verdana,Sans-serif;
+@wrapper_font-family: Arial, 'DejaVu Sans', 'Liberation Sans', Freesans, sans-serif;
 @wrapper_color-text: #222222;
 @wrapper_color-link: #105CB6;
+@wrapper_color-background: #ffffff;
+@html_color-background: #f2f2f2;
 /*  ------------------------------------------------------------------------*/
 /* #endregion */
 /*  ------------------------------------------------------------------------*/
 /* #region Vertical rhythm */
 /*  ------------------------------------------------------------------------*/
-.sfPublicWrapper { color: @wrapper_color-text; font-family: @wrapper_font-family; font-size: @wrapper_font-size; h1h1line-height: @wrapper_line-height;
-
+.sfPublicWrapper { color: @wrapper_color-text; font-family: @wrapper_font-family; font-size: @wrapper_font-size; line-height: @wrapper_line-height;
     h1 { font-size: 2.5 * @wrapper_font-size; font-weight: normal; line-height: 2 * @wrapper_line-height; margin-bottom: round(0.34 * @wrapper_line-height); margin-top: round(0.67 * @wrapper_line-height); }
     h2 { font-size: 2.0 * @wrapper_font-size; font-weight: normal; line-height: 2 * @wrapper_line-height; margin-bottom: round(0.34 * @wrapper_line-height); margin-top: round(0.67 * @wrapper_line-height); }
     h3 { font-size: 1.5 * @wrapper_font-size; font-weight: normal; line-height: 2 * @wrapper_line-height; margin-bottom: round(0.34 * @wrapper_line-height); margin-top: round(0.67 * @wrapper_line-height); }
@@ -25,23 +26,16 @@
     h5 { font-size: 1 * @wrapper_font-size; font-weight: normal; line-height: 2 * @wrapper_line-height; margin-top: @wrapper_line-height; }
     h6 { font-size: 1 * @wrapper_font-size; font-weight: normal; line-height: 1 * @wrapper_line-height; margin-top: @wrapper_line-height; }
     p, ul, blockquote { margin-bottom: @wrapper_line-height; }
+    a, a:active, a:hover, a:visited { color: @wrapper_color-link; }
 }
 /*  ------------------------------------------------------------------------*/
 /* #endregion */
 /*  ------------------------------------------------------------------------*/
 /* #region Project stylesheet */
 /*  ------------------------------------------------------------------------*/
-html, body, form { display: block; float: left; margin: 0 auto; padding: 0; width: 100%; }
-#PublicWrapper { display: block; margin: 0 auto; min-width: 960px; position: relative; }
-
-/*  ------------------------------------------------------------------------*/
-/* #endregion */
-/*  ------------------------------------------------------------------------*/
-/* #region Non semantic helper class */
-/*  ------------------------------------------------------------------------*/
-.left { float: left; } .right { float: right; } .hidden { display: none !important; visibility: hidden; } .visible { visibility: visible; } .invisible { visibility: hidden; }
-.ir { background-color: transparent; background-repeat: no-repeat; border: 0; direction: ltr; display: block; overflow: hidden; text-align: left; text-indent: -999em; } .ir br { display: none; }
-.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; } .visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+html { background: @html_color-background; }
+html, body, form { display: block; float: left; margin: 0 auto; width: 100%; }
+#PublicWrapper { display: block; margin: 0 auto; min-width: 960px; max-width:960px; background: @wrapper_color-background; }
 /*  ------------------------------------------------------------------------*/
 /* #endregion */
 /*  ------------------------------------------------------------------------*/

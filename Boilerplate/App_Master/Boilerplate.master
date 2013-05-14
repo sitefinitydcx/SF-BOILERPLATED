@@ -1,8 +1,8 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" %>
 
+<%@ Register Src="~/App_Data/Sitefinity/WebsiteTemplates/Boilerplate/App_Master/MetaData.ascx" TagPrefix="uc" TagName="MetaData" %>
 <%@ Register Assembly="Telerik.Sitefinity" Namespace="Telerik.Sitefinity.Web.UI" TagPrefix="sf" %>
 <%@ Register Assembly="Telerik.Sitefinity" Namespace="Telerik.Sitefinity.Web.UI.PublicControls" TagPrefix="sf" %>
-<%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
 <%@ Import Namespace="Telerik.Sitefinity.Localization" %>
 
 <!DOCTYPE html>
@@ -12,107 +12,85 @@
 <!--[if gt IE 8]><!-->
 <html class="no-js">
 <!--<![endif]-->
-<head id="Head" runat="server">
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta http-equiv="cleartype" content="on">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="application-name" content="Website applicationname shown above taskbar preview">
-    <meta name="msapplication-tooltip" content="Additional tooltip text">
-    <meta name="msapplication-window" content="width=1024;height=768">
-    <meta name="msapplication-starturl" content="./">
-    <meta name="msapplication-navbutton-color" content="#E72C53">
-    <meta name="msapplication-TileColor" content="#E72C53">
-    <meta name="msapplication-TileImage" content="/Sitefinity/WebsiteTemplates/Boilerplate/App_Themes/Boilerplate/Icons/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/Sitefinity/WebsiteTemplates/Boilerplate/App_Themes/Boilerplate/Icons/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/Sitefinity/WebsiteTemplates/Boilerplate/App_Themes/Boilerplate/Icons/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/Sitefinity/WebsiteTemplates/Boilerplate/App_Themes/Boilerplate/Icons/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="/Sitefinity/WebsiteTemplates/Boilerplate/App_Themes/Boilerplate/Icons/apple-touch-icon-57-precomposed.png">
-
-    <link rel="shortcut icon" href="/Sitefinity/WebsiteTemplates/Boilerplate/App_Themes/Boilerplate/Icons/favicon.ico">
-    <meta name="title" content="HTML5 Boilerplate template for Sitefinity compatible with Sitefinity v5.0-v5.2">
-    <meta name="author" content="jbokkers">
-    <meta name="description" content="description">
+<head id="head" runat="server">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <uc:MetaData runat="server" ID="FalafelMetaData" />
     <title></title>
-    <sf:JavaScriptEmbedControl id="script1" runat="server" scriptembedposition="InPlace" url="/Sitefinity/WebsiteTemplates/Boilerplate/JS/script.top.min.js" />
+    <sf:javascriptembedcontrol id="script1" runat="server" scriptembedposition="InPlace" url="/sfv604100/Sitefinity/WebsiteTemplates/Boilerplate/JS/script.top.min.js" />
     <sf:resourcelinks id="ResourceLinks1" runat="server">
         <sf:ResourceFile JavaScriptLibrary="JQuery" />
         <sf:ResourceFile Name="Telerik.Sitefinity.Resources.Scripts.Kendo.kendo.all.min.js" />
     </sf:resourcelinks>
 </head>
 <!--  ========================================================================== -->
-<!--  upd: 19/10/2012 | Based on h5bp.com v4.0.2 | credits go where credits due  -->
+<!--  upd: 13/05/2013 | Based on h5bp.com v4.2.0 | credits go where credits due  -->
 <!--  ========================================================================== -->
 <!-- TODO: Change paths /Sitefinity/WebsiteTemplates/Boilerplate appropiately    -->
-<!-- TODO: Change the meta tags above and/or remove iOS/IE9-10 improvements      -->
-<!-- TODO: Remove the first line after the body tag if you support <IE7          -->
-<!-- TODO: Change the accesskey href to match your contentid                     -->
+<!-- TODO: Edit MetaData.ascx to adjust properties and paths                     -->
 <!--  ========================================================================== -->
-
 <body class="standard">
-    <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>not</em> supported. <a href="http://browsehappy.com/">Upgrade to a different browser</a> to experience this site.</p><![endif]-->
-    <form id="form1" runat="server">
-        <asp:ScriptManager runat="server" EnableScriptGlobalization="true" EnableScriptLocalization="false"></asp:ScriptManager>
-        <a accesskey="s" href="#cpw_main" id="sfSkip" class="visuallyhidden">
-            <asp:Literal ID="skipToMainContentLiteral" runat="server" Text='<%$Resources:PageResources, SkipToTheMainContent %>' /></a>
-        <!--  ============================================================================== -->
-        <div id="PublicWrapper" class="sfPublicWrapper">
-            <!--  ========================================================================== -->
-            <!-- header section -->
-            <section id="HeaderWrapper" class="sf_cols" role="region" clientidmode="static" runat="server">
-                <!--  ====================================================================== -->
-                <div id="cpw_headerwrapper" class="sf_colsOut sf_1col_1_100">
-                    <!--  ================================================================== -->
-                    <header id="cpw_header" class="sf_colsIn sf_1col_1in_100">
-                        <asp:ContentPlaceHolder ID="cph_header" runat="server" />
-                    </header>
-                    <nav id="cpw_navigation" class="sf_colsIn sf_1col_1in_100" role="navigation">
-                        <asp:ContentPlaceHolder ID="cph_navigation" runat="server" />
-                    </nav>
-                    <!--  ================================================================== -->
+    <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+    <form id="aspnetForm" runat="server">
+        <telerik:RadScriptManager ID="RadScriptManager1" EnableScriptGlobalization="True" EnableScriptLocalization="False" runat="server" ></telerik:RadScriptManager>
+            <a accesskey="s" href="#cpw_main" id="sfSkip" class="visuallyhidden">
+                <asp:Literal ID="skipToMainContentLiteral" runat="server" Text='<%$Resources:PageResources, SkipToTheMainContent %>' /></a>
+            <!--  ============================================================================== -->
+            <div id="PublicWrapper" class="sfPublicWrapper">
+                <!--  ========================================================================== -->
+                <!-- header section -->
+                <section id="HeaderWrapper" class="sf_cols" role="region" runat="server">
+                    <!--  ====================================================================== -->
+                    <div id="cpw_headerwrapper" class="sf_colsOut sf_1col_1_100">
+                        <!--  ================================================================== -->
+                        <header id="cpw_header" class="sf_colsIn sf_1col_1in_100">
+                            <asp:ContentPlaceHolder ID="cph_header" runat="server" />
+                        </header>
+                        <nav id="cpw_navigation" class="sf_colsIn sf_1col_1in_100" role="navigation">
+                            <asp:ContentPlaceHolder ID="cph_navigation" runat="server" />
+                        </nav>
+                        <!--  ================================================================== -->
+                    </div>
+                </section>
+                <!--  ========================================================================== -->
+                <!-- main content section-->
+                <div id="MainWrapper" class="sf_cols" role="region" runat="server">
+                    <!--  ====================================================================== -->
+                    <div id="cpw_mainwrapper" class="sf_colsOut sf_1col_1_100">
+                        <!--  ================================================================== -->
+                        <article id="cpw_main" class="sf_colsIn sf_1col_1in_100" role="main">
+                            <asp:ContentPlaceHolder ID="cph_main" runat="server" />
+                        </article>
+                        <!--  ================================================================== -->
+                    </div>
+                    <!--  ====================================================================== -->
                 </div>
-            </section>
-            <!--  ========================================================================== -->
-            <!-- main content section-->
-            <section id="MainWrapper" class="sf_cols" role="region" clientidmode="static" runat="server">
-                <!--  ====================================================================== -->
-                <div id="cpw_mainwrapper" class="sf_colsOut sf_1col_1_100">
-                    <!--  ================================================================== -->
-                    <article id="cpw_main" class="sf_colsIn sf_1col_1in_100" role="main">
-                        <asp:ContentPlaceHolder ID="cph_main" runat="server" />
-                    </article>
-                    <!--  ================================================================== -->
-                </div>
-                <!--  ====================================================================== -->
-            </section>
-            <!--  ========================================================================== -->
-            <!-- footer section -->
-            <section id="FooterWrapper" class="sf_cols" role="region" clientidmode="static" runat="server">
-                <!--  ====================================================================== -->
-                <div id="cpw_footerwrapper" class="sf_colsOut sf_1col_1_100">
-                    <!--  ================================================================== -->
-                    <footer id="cpw_footer" class="sf_colsIn sf_1col_1in_100" role="contentinfo">
-                        <asp:ContentPlaceHolder ID="cph_footer" runat="server" />
-                    </footer>
-                    <!--  ================================================================== -->
-                </div>
-                <!--  ====================================================================== -->
-            </section>
-            <!--  ========================================================================== -->
-        </div>
-        <!--  ============================================================================== -->
-        <!-- no content below - scriptwrapper is purely for js or css widgets in sitefinity  -->
-        <!--  ============================================================================== -->
-        <div id="ScriptWrapper">
-            <script type="text/javascript" src="/Sitefinity/WebsiteTemplates/Boilerplate/JS/script.bottom.min.js"></script>
-            <asp:ContentPlaceHolder ID="cph_scriptsandstyles" runat="server">
-                <hr />
-                -- ONLY PLACE STYLE WIDGETS AND SCRIPT WIDGETS BELOW THIS AREA --
-                <hr />
-            </asp:ContentPlaceHolder>
-            <!--  ========================================================================== -->
-        </div>
+                <!--  ========================================================================== -->
+                <!-- footer section -->
+                <section id="FooterWrapper" class="sf_cols" role="region" runat="server">
+                    <!--  ====================================================================== -->
+                    <div id="cpw_footerwrapper" class="sf_colsOut sf_1col_1_100">
+                        <!--  ================================================================== -->
+                        <footer id="cpw_footer" class="sf_colsIn sf_1col_1in_100" role="contentinfo">
+                            <asp:ContentPlaceHolder ID="cph_footer" runat="server" />
+                        </footer>
+                        <!--  ================================================================== -->
+                    </div>
+                    <!--  ====================================================================== -->
+                </section>
+                <!--  ========================================================================== -->
+            </div>
+            <!--  ============================================================================== -->
+            <!-- no content below - scriptwrapper is purely for js or css widgets in sitefinity  -->
+            <!--  ============================================================================== -->
+            <div id="ScriptWrapper" runat="server" title="Only place scripts and styles in this region">
+                <script type="text/javascript" src="/sfv604100/Sitefinity/WebsiteTemplates/Boilerplate/JS/script.bottom.min.js"></script>
+                <asp:ContentPlaceHolder ID="cph_scriptsandstyles" runat="server" />
+                <!--  ========================================================================== -->
+            </div>
     </form>
 </body>
 </html>

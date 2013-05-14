@@ -1,4 +1,4 @@
-# [Sitefinity boilerplated]
+# [Sitefinity boilerplate]
 
 Empty starting points for easy Sitefinity development including ports of HTML5Boilerplate project and Twitter Bootstrap.
 
@@ -12,14 +12,20 @@ Publish your site automatically with Sitefinity Thunder or manually add the them
 
 ## Boilerplate (HTML5Boilerplate port)
 
-* A Sitefinity optimized port of the HTML5 Boilerplate project (http://html5boilerplate.com).
+* A Sitefinity optimized port of the HTML5 Boilerplate project [http://html5boilerplate.com]
 * HTML5 ready, with ARIA role definition and fallback browser support through Modernizr
 * Based on and compatible with the standard Sitefinity lay-out region editor.
 * Cross browser CSS normalizations and vertical rhythm.
 * Responsive design & mobile friendly with Sitefinity column support
-* The latest jQuery via CDN, with a local fallback.
-* Browser hack and W3C validation breakers singled out.
+* The latest compatible jQuery via Sitefinity.
 * Support for .LESS and .CSS.
+
+### Changelog & component versions
+* Sitefinity compatibility: `6.x`
+* H5BP Compatibility: `4.2.0`
+* jQuery version: `1.8.3`
+* Modernizr version: `2.6.2`
+
 
 ## Bootstrap (Twitter Bootstrap extension)
 
