@@ -2,12 +2,8 @@
 
 Empty starting points for easy Sitefinity development including ports of HTML5Boilerplate project and Twitter Bootstrap.
 
-
-## Quick start
-
-Grab the base folder you need (Boilerplate / Bootstrap) and download the files.
-Copy the entire unzipped files inside your solutions /App_Data/WebsiteTemplates folder. 
-Publish your site automatically with Sitefinity Thunder or manually add the theme to your project.
+### Quick start
+Read the readme.md in each framework folder for installation instructions.
 
 
 ## Boilerplate (HTML5Boilerplate port)
@@ -20,13 +16,6 @@ Publish your site automatically with Sitefinity Thunder or manually add the them
 * The latest compatible jQuery via Sitefinity.
 * Support for .LESS and .CSS.
 
-### Changelog & component versions
-* Sitefinity compatibility: `6.x`
-* H5BP Compatibility: `4.2.0`
-* jQuery version: `1.8.3`
-* Modernizr version: `2.6.2`
-
-
 ## Bootstrap (Twitter Bootstrap extension)
 
 * A Sitefinity optimized extension of the Twitter Bootstrap project (https://github.com/twitter/bootstrap/).
@@ -36,9 +25,10 @@ Publish your site automatically with Sitefinity Thunder or manually add the them
 * Default template includes the Responsive Navbar.
 
 ## Sitefinity-icons
-Included are all precomposed icons for the iPhone/iPad & Android devices, and Windows 7 and 8 pinning features. 
-The favicon.ico comes in 2 flavors. The default favicon.ico is 64x64 which is enhanced for IE9/IE10 sitepinning, an old 16x16 icon is included.
+* Precomposed icons for the iPhone/iPad & Android devices.
+* Internet Explorer 9 & 10 plus Windows 8 Metro pinning features. 
 
+The favicon.ico comes in 2 flavors. The default favicon.ico is 64x64 which is enhanced for IE9/IE10 sitepinning, an old 16x16 icon is included.
 All icons are included and referenced in the respective projects, the sitefinity-icons folder is just 'extra'.
 
 
@@ -50,12 +40,10 @@ For comments or questions use twitter @jbokkers
 ## License
 
 ### Major components:
-
 * jQuery: MIT/GPL license
 * Modernizr: MIT/BSD license
 * Normalize.css: Public Domain
 * Twitter Bootstrap:  Apache License 2.0
 
 ### Everything else:
-
 The Unlicense (aka: public domain)
