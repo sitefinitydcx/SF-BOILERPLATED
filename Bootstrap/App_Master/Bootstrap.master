@@ -1,97 +1,102 @@
-﻿<%@ Master Language="C#" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" %>
 
-<!doctype html>
-<html lang="en">
-<head id="Head" runat="server">
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta http-equiv="cleartype" content="on">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<%@ Register Src="~/App_Data/Sitefinity/WebsiteTemplates/Bootstrap/App_Master/MetaData.ascx" TagPrefix="uc" TagName="MetaData" %>
+<%@ Register Assembly="Telerik.Sitefinity" Namespace="Telerik.Sitefinity.Web.UI" TagPrefix="sf" %>
+<%@ Register Assembly="Telerik.Sitefinity" Namespace="Telerik.Sitefinity.Web.UI.PublicControls" TagPrefix="sf" %>
+<%@ Import Namespace="Telerik.Sitefinity.Localization" %>
 
-  <meta name="application-name" content="Website applicationname shown above taskbar preview">
-  <meta name="msapplication-tooltip" content="Additional tooltip text">
-  <meta name="msapplication-window" content="width=1024;height=768" />
-  <meta name="msapplication-starturl" content="./">
-  <meta name="msapplication-navbutton-color" content="#E72C53" />
-  <meta name="msapplication-TileColor" content="#E72C53" />
-  <meta name="msapplication-TileImage" content="/Sitefinity/WebsiteTemplates/Bootstrap/App_Themes/Bootstrap/Icons/apple-touch-icon-144-precomposed.pn" />
-  <link rel="shortcut icon" href="/Sitefinity/WebsiteTemplates/Bootstrap/App_Themes/Bootstrap/Icons/favicon.ico">
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/Sitefinity/WebsiteTemplates/Bootstrap/App_Themes/Bootstrap/Icons/apple-touch-icon-144-precomposed.png">
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/Sitefinity/WebsiteTemplates/Bootstrap/App_Themes/Bootstrap/Icons/apple-touch-icon-114-precomposed.png">
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/Sitefinity/WebsiteTemplates/Bootstrap/App_Themes/Bootstrap/Icons/apple-touch-icon-72-precomposed.png">
-  <link rel="apple-touch-icon-precomposed" href="/Sitefinity/WebsiteTemplates/Bootstrap/App_Themes/Bootstrap/Icons/apple-touch-icon-57-precomposed.png">
-
-  <meta name="title" content="Twitter Bootstrap template for Sitefinity">
-  <meta name="author" content="jbokkers">
-  <meta name="version" content="5.1.3210.00">
-  <meta name="description" content="description">
-  <title></title>
-  <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head id="head" runat="server">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <uc:MetaData runat="server" ID="FalafelMetaData" />
+    <meta name="title" content="HTML5 Boilerplate template for Sitefinity compatible with Sitefinity v5.0-v5.2" />
+    <meta name="author" content="jbokkers" />
+    <meta name="description" content="description" />
+    <title></title>
 </head>
-<body class="main-body">
-  <form id="form1" runat="server">
-  <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
-  <div id="PublicWrapper" class="sfPublicWrapper">
-    <!-- header navigation -->
-    <nav id="HeaderWrapper" class="sf_cols" role="navigation">
-      <div class="navbar navbar-fixed-top">
-        <div class="navbar-inner">
-          <div class="container">
-            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </a>
-            <a class="brand" href="#">Project name</a>
-            <div class="nav-collapse">
-              <asp:ContentPlaceHolder ID="cph_navigation" runat="server" />
-              <!-- put the commented ul-li inside the cph_navigation placeholder inside sitefinity for proper menu -->
-              <!--
-              <ul class="nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-              </ul>
-              -->
-            </div>
-            <!--/.nav-collapse -->
-          </div>
+<!--  ========================================================================== -->
+<!--  upd: 17/05/2013 | Based on Twitter Bootstrap v2.3.1                        -->
+<!--  ========================================================================== -->
+<!-- TODO: Change paths /Sitefinity/WebsiteTemplates/Bootstrap appropiately      -->
+<!--  ========================================================================== -->
+<body class="standard">
+    <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+    <form id="aspnetForm" runat="server">
+        <telerik:RadScriptManager ID="RadScriptManager1" CompositeScript-ScriptMode="Release" EnableScriptGlobalization="True" EnableScriptLocalization="False" runat="server" CompositeScript-NotifyScriptLoaded="True" LoadScriptsBeforeUI="True">
+            <CompositeScript>
+                <Scripts>
+                    <asp:ScriptReference Name="MicrosoftAjax.js" Assembly="System.Web.Extensions" />
+                    <asp:ScriptReference Name="MicrosoftAjaxWebForms.js" Assembly="System.Web.Extensions" />
+                    <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" />
+                    <asp:ScriptReference Path="~/App_Data/Sitefinity/WebsiteTemplates/Bootstrap/JS/script.top.min.js" />
+                    <asp:ScriptReference Name="Telerik.Sitefinity.Resources.Scripts.jquery-1.8.3.min.js" Assembly="Telerik.Sitefinity.Resources" />
+                    <asp:ScriptReference Name="Telerik.Sitefinity.Resources.Scripts.Kendo.kendo.all.min.js" Assembly="Telerik.Sitefinity.Resources" />
+                    <asp:ScriptReference Path="~/App_Data/Sitefinity/WebsiteTemplates/Bootstrap/JS/bootstrap.min.js" />
+                </Scripts>
+            </CompositeScript>
+        </telerik:RadScriptManager>
+        <a accesskey="s" href="#cpw_main" id="sfSkip" class="visuallyhidden">
+            <asp:Literal ID="skipToMainContentLiteral" runat="server" Text='<%$Resources:PageResources, SkipToTheMainContent %>' /></a>
+        <!--  ============================================================================== -->
+        <div id="PublicWrapper" class="sfPublicWrapper container">
+            <!--  ========================================================================== -->
+            <!-- header section -->
+            <section id="HeaderWrapper" class="sf_cols row-fluid" role="region" clientidmode="static" runat="server">
+                <!--  ====================================================================== -->
+                <div id="cpw_headerwrapper" class="sf_colsOut">
+                    <!--  ================================================================== -->
+                    <header id="cpw_header" class="sf_colsIn span12">
+                        <asp:ContentPlaceHolder ID="cph_header" runat="server" />
+                    </header>
+                    <!--  ================================================================== -->
+                </div>
+            </section>
+            <!--  ========================================================================== -->
+            <!-- main content section-->
+            <section id="MainWrapper" class="sf_cols row-fluid" role="region" clientidmode="static" runat="server">
+                <!--  ====================================================================== -->
+                <div id="cpw_mainwrapper" class="sf_colsOut">
+                    <!--  ================================================================== -->
+                    <article id="cpw_main" class="sf_colsIn span12" role="main">
+                        <asp:ContentPlaceHolder ID="cph_main" runat="server" />
+                    </article>
+                    <!--  ================================================================== -->
+                </div>
+                <!--  ====================================================================== -->
+            </section>
+            <!--  ========================================================================== -->
+            <!-- footer section -->
+            <section id="FooterWrapper" class="sf_cols row-fluid" role="region" clientidmode="static" runat="server">
+                <!--  ====================================================================== -->
+                <div id="cpw_footerwrapper" class="sf_colsOut">
+                    <!--  ================================================================== -->
+                    <footer id="cpw_footer" class="sf_colsIn span12" role="contentinfo">
+                        <asp:ContentPlaceHolder ID="cph_footer" runat="server" />
+                    </footer>
+                    <!--  ================================================================== -->
+                </div>
+                <!--  ====================================================================== -->
+            </section>
+            <!--  ========================================================================== -->
         </div>
-      </div>
-    </nav>
-    <!-- content -->
-    <section id="ContentWrapper" class="sf_cols" role="region">
-      <div class="container">
-        <asp:ContentPlaceHolder ID="cph_content" runat="server" />
-      </div>
-    </section>
-  </div>
-  <!-- ScriptWrapper -->
-  <div id="ScriptWrapper">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <script>            window.jQuery || document.write('<script src="/Sitefinity/WebsiteTemplates/Bootstrap/JS/jquery-1.7.2.min.js"><\/script>')</script>
-    <script src="/Sitefinity/WebsiteTemplates/Bootstrap/JS/bootstrap-transition.js"></script>
-    <script src="/Sitefinity/WebsiteTemplates/Bootstrap/JS/bootstrap-alert.js"></script>
-    <script src="/Sitefinity/WebsiteTemplates/Bootstrap/JS/bootstrap-modal.js"></script>
-    <script src="/Sitefinity/WebsiteTemplates/Bootstrap/JS/bootstrap-dropdown.js"></script>
-    <script src="/Sitefinity/WebsiteTemplates/Bootstrap/JS/bootstrap-scrollspy.js"></script>
-    <script src="/Sitefinity/WebsiteTemplates/Bootstrap/JS/bootstrap-tab.js"></script>
-    <script src="/Sitefinity/WebsiteTemplates/Bootstrap/JS/bootstrap-tooltip.js"></script>
-    <script src="/Sitefinity/WebsiteTemplates/Bootstrap/JS/bootstrap-popover.js"></script>
-    <script src="/Sitefinity/WebsiteTemplates/Bootstrap/JS/bootstrap-button.js"></script>
-    <script src="/Sitefinity/WebsiteTemplates/Bootstrap/JS/bootstrap-collapse.js"></script>
-    <script src="/Sitefinity/WebsiteTemplates/Bootstrap/JS/bootstrap-carousel.js"></script>
-    <script src="/Sitefinity/WebsiteTemplates/Bootstrap/JS/bootstrap-typeahead.js"></script>
-    <!-- custom scripts -->
-    <asp:ContentPlaceHolder ID="cph_scriptsandstyles" runat="server">
-      <hr />
-      -- ONLY PLACE STYLE WIDGETS AND SCRIPT WIDGETS BELOW THIS AREA --
-      <hr />
-    </asp:ContentPlaceHolder>
-  </div>
-  </form>
+        <!--  ============================================================================== -->
+        <!-- no content below - scriptwrapper is purely for js or css widgets in sitefinity  -->
+        <!--  ============================================================================== -->
+        <div id="ScriptWrapper" clientidmode="static" runat="server" title="Only place scripts and styles in this region">
+            <script type="text/javascript" src="/sfv604100/Sitefinity/WebsiteTemplates/Bootstrap/JS/script.bottom.min.js"></script>
+            <asp:ContentPlaceHolder ID="cph_scriptsandstyles" runat="server" />
+            <!--  ========================================================================== -->
+        </div>
+    </form>
 </body>
 </html>
-

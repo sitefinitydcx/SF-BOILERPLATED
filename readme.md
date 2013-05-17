@@ -16,13 +16,13 @@ Read the readme.md in each framework folder for installation instructions.
 * The latest compatible jQuery via Sitefinity.
 * Support for .LESS and .CSS.
 
-## Bootstrap (Twitter Bootstrap extension)
+## Bootstrap (Twitter Bootstrap Framework)
 
-* A Sitefinity optimized extension of the Twitter Bootstrap project (https://github.com/twitter/bootstrap/).
+* A Sitefinity optimized port of the Twitter Bootstrap project (https://github.com/twitter/bootstrap/).
 * HTML5 ready, with ARIA role definition and fallback browser support through Modernizr
-* Compatible with Sitefinity's region editor (use hardcoded row/span or Sitefinity's editor)
+* Compatible with Sitefinity's region editor (additional layout widgets included)
 * Twitter Bootstrap is 'untouched' to allow for easy updating (NuGet/GitHub) or use with SASS port.
-* Default template includes the Responsive Navbar.
+* Default template included.
 
 ## Sitefinity-icons
 * Precomposed icons for the iPhone/iPad & Android devices.
