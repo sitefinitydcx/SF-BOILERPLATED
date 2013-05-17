@@ -20,7 +20,7 @@ Read the readme.md in each framework folder for installation instructions.
 
 * A Sitefinity optimized port of the Twitter Bootstrap project (https://github.com/twitter/bootstrap/).
 * HTML5 ready, with ARIA role definition and fallback browser support through Modernizr
-* Compatible with Sitefinity's region editor (additional layout widgets included)
+* Compatible with Bootstrap responsive grid and Sitefinity's region editor (additional layout widgets included)
 * Twitter Bootstrap is 'untouched' to allow for easy updating (NuGet/GitHub) or use with SASS port.
 * Default template included.
 

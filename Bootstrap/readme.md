@@ -1,5 +1,6 @@
-# Sitefinity 5 Twitter Bootstrap template and theme
-A full port of the Twitter Bootstrap framework to be compatible with Sitefinity 6.
+# Sitefinity Twitter Bootstrap template and theme
+A full port of the Twitter Bootstrap framework to be compatible with Sitefinity 6. 
+Empty and optimized starting point which is fully Bootstrap Responsive and Sitefinity mobile compatible.
   
 Compatibility: Sitefinity `6.x`. Twitter Bootstrap `2.3.1`.
   
