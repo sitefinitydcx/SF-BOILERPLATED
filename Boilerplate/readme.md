@@ -14,13 +14,13 @@ Choose whether you want minified CSS, development CSS or .LESS files and publish
  - Log into Sitefinity backend. 
  - Choose Administration >> Settings >> Advanced >> Appearance >> Frontend themes
  - Select `Create new`.
- - Type in a userfriendly name.
+ - Type in a user-friendly name.
  - Type in a path similar to `~/App_Data/Sitefinity/WebsiteTemplates/Boilerplate/App_Themes/Boilerplate`
  - Select `Save Changes`
 
  - Choose Design >> Page Templates
  - Select `Create a template`
- - Type in a userfriendly name.
+ - Type in a user-friendly name.
  - Select `Use template`
  - Select `Select another Template`
  - Select `Use your own .master file`
@@ -39,7 +39,7 @@ Choose whether you want minified CSS, development CSS or .LESS files and publish
 
 ## Features
 * A Sitefinity optimized port of the HTML5 Boilerplate project (http://html5boilerplate.com).
-* HTML5 ready, with ARIA role definition and fallback browser support through Modernizr
+* HTML5 ready, with ARIA role definition and fall-back browser support through Modernizr
 * Based on and compatible with the standard Sitefinity lay-out region editor.
 * Cross browser CSS normalizations and vertical rhythm.
 * Responsive design & mobile friendly with Sitefinity column support
@@ -65,8 +65,8 @@ Complete with extra scriptwrapper placeholder which won't out on live sites so s
 
 ### Javascript & jQuery
 jQuery is loaded from Sitefinity to ensure proper compatibility. Through Sitefinity settings, jQuery can be loaded locally or through CDN.
-The masterpage references 2 .js files, script.top.min.js and script.bottom.min.js to seperate javascript loading.
+The masterpage references 2 .js files, script.top.min.js and script.bottom.min.js to separate javascript loading.
 The script.top.min.js already contains the latest minified Modernizr, script.bottom.min.js is empty and ready for your projects javascript/jQuery.
 
 ### Meta-data
-Meta-tags are extracted into seperate MetaData.ascx to keep Masterpage clean and to allow for easier editing.
+Meta-tags are extracted into separate MetaData.ascx to keep Masterpage clean and to allow for easier editing.
