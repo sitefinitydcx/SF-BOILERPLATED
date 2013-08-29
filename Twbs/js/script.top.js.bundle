@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bundle minify="true" runOnBuild="true" output="script.top.js">
+  <!--The order of the <file> elements determines the order of them when bundled.-->
+  <file>/Scripts/modernizr-2.6.2.js</file>
+  <file>/Scripts/respond.js</file>
+</bundle>

@@ -1,0 +1,100 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" %>
+
+<%@ Register Src="~/App_Data/Sitefinity/WebsiteTemplates/twbs/App_Master/MetaData.ascx" TagPrefix="uc" TagName="MetaData" %>
+<%@ Register Assembly="Telerik.Sitefinity" Namespace="Telerik.Sitefinity.Web.UI" TagPrefix="sf" %>
+<%@ Register Assembly="Telerik.Sitefinity" Namespace="Telerik.Sitefinity.Web.UI.PublicControls" TagPrefix="sf" %>
+<%@ Import Namespace="Telerik.Sitefinity.Localization" %>
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head id="head" runat="server">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <uc:MetaData runat="server" ID="MasterMetaData" />
+    <asp:PlaceHolder ID="PlaceHolderScriptTop" runat="server">
+        <!--[if lt IE 9]>
+                <script type="text/javascript" src="<%= Page.ResolveClientUrl("~/Sitefinity/WebsiteTemplates/twbs/JS/script.top.min.js") %>" async="async"></script>
+    <![endif]-->
+    </asp:PlaceHolder>
+    <title></title>
+</head>
+<!--  ========================================================================== -->
+<!--  upd: 29/08/2013 | Based on Twitter Bootstrap v3.0.0                        -->
+<!--  ========================================================================== -->
+<!-- TODO: Change paths /Sitefinity/WebsiteTemplates/twbs appropiately           -->
+<!--  ========================================================================== -->
+<body class="standard">
+    <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a>.</p>
+        <![endif]-->
+    <form id="aspnetForm" runat="server">
+        <telerik:radscriptmanager id="RadScriptManager1" compositescript-scriptmode="Release" enablescriptglobalization="True" enablescriptlocalization="False" runat="server" compositescript-notifyscriptloaded="True" loadscriptsbeforeui="True" outputcompression="Forced">
+            <CompositeScript>
+                <Scripts>
+                    <asp:ScriptReference Name="MicrosoftAjax.js" Assembly="System.Web.Extensions" />
+                    <asp:ScriptReference Name="MicrosoftAjaxWebForms.js" Assembly="System.Web.Extensions" />
+                    <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" />
+                    <asp:ScriptReference Name="Telerik.Sitefinity.Resources.Scripts.jquery-1.8.3.min.js" Assembly="Telerik.Sitefinity.Resources" />
+                    <asp:ScriptReference Path="~/App_Data/Sitefinity/WebsiteTemplates/twbs/JS/bootstrap.min.js" />
+                </Scripts>
+            </CompositeScript>
+        </telerik:radscriptmanager>
+        <a accesskey="s" href="#cpw_main" id="sfSkip" class="sr-only">
+            <asp:Literal ID="skipToMainContentLiteral" runat="server" Text='<%$Resources:PageResources, SkipToTheMainContent %>' /></a>
+        <!--  ============================================================================== -->
+        <div id="PublicWrapper" class="sfPublicWrapper container">
+            <!--  ========================================================================== -->
+            <!-- header section -->
+            <section id="HeaderWrapper" class="sf_cols row" role="region" clientidmode="static" runat="server">
+                <div id="cpw_headerwrapper" class="sf_colsOut">
+                    <!--  ================================================================== -->
+                    <header id="cpw_header" class="sf_colsIn col-md-12">
+                        <asp:ContentPlaceHolder ID="cph_header" runat="server" />
+                    </header>
+                    <!--  ================================================================== -->
+                </div>
+            </section>
+            <!--  ========================================================================== -->
+            <!-- main content section-->
+            <section id="MainWrapper" class="sf_cols row" role="region" clientidmode="static" runat="server">
+                <div id="cpw_mainwrapper" class="sf_colsOut">
+                    <!--  ================================================================== -->
+                    <article id="cpw_main" class="sf_colsIn col-md-12" role="main">
+                        <asp:ContentPlaceHolder ID="cph_main" runat="server" />
+                    </article>
+                    <!--  ================================================================== -->
+                </div>
+                <!--  ====================================================================== -->
+            </section>
+            <!--  ========================================================================== -->
+            <!-- footer section -->
+            <section id="FooterWrapper" class="sf_cols row" role="region" clientidmode="static" runat="server">
+                <div id="cpw_footerwrapper" class="sf_colsOut">
+                    <!--  ================================================================== -->
+                    <footer id="cpw_footer" class="sf_colsIn col-md-12" role="contentinfo">
+                        <asp:ContentPlaceHolder ID="cph_footer" runat="server" />
+                    </footer>
+                    <!--  ================================================================== -->
+                </div>
+            </section>
+            <!--  ========================================================================== -->
+        </div>
+        <!--  ============================================================================== -->
+        <!-- no content below - scriptwrapper is purely for js or css widgets in sitefinity  -->
+        <!--  ============================================================================== -->
+        <div id="ScriptWrapper" clientidmode="static" runat="server" title="Only place scripts and styles in this region">
+            <asp:PlaceHolder ID="PlaceHolderScriptBottom" runat="server">
+                <script type="text/javascript" src="<%= Page.ResolveClientUrl("~/Sitefinity/WebsiteTemplates/twbs/JS/script.bottom.min.js") %>" defer="defer" async="async"></script>
+            </asp:PlaceHolder>
+            <asp:ContentPlaceHolder ID="cph_scriptsandstyles" runat="server" />
+            <!--  ========================================================================== -->
+        </div>
+    </form>
+</body>
+</html>

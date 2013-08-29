@@ -16,7 +16,15 @@ Read the readme.md in each framework folder for installation instructions.
 * The latest compatible jQuery via Sitefinity.
 * Support for .LESS and .CSS.
 
-## Bootstrap (Twitter Bootstrap Framework)
+## Twbs (Twitter Bootstrap Framework v`3.0.0`)
+
+* A Sitefinity optimized port of the Twitter Bootstrap project (https://github.com/twbs/bootstrap/).
+* HTML5 ready, with ARIA role definition and fallback browser support through Modernizr
+* Compatible with Bootstrap v3 responsive grid and Sitefinity's region editor (additional layout widgets included)
+* Twitter Bootstrap is 'untouched' to allow for easy updating (NuGet/GitHub) or use with SASS port.
+* Default template included.
+
+## Bootstrap (Twitter Bootstrap Framework v`2.3.1`)
 
 * A Sitefinity optimized port of the Twitter Bootstrap project (https://github.com/twitter/bootstrap/).
 * HTML5 ready, with ARIA role definition and fallback browser support through Modernizr
