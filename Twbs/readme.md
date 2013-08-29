@@ -64,6 +64,6 @@ The script.top.min.js already contains the latest minified Modernizr, script.bot
 ### Meta-data
 Meta-tags are extracted into separate MetaData.ascx to keep Masterpage clean and to allow for easier editing.
 
-## Sitefinity-icons
+### Sitefinity-icons
 Included are all precomposed icons for the iPhone/iPad & Android devices, and Windows 8 pinning. 
 The favicon.ico comes in 2 flavors. The default favicon.ico is 64x64 which is enhanced for IE9/IE10 sitepinning, an old 16x16 icon is included.
