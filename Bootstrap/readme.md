@@ -14,7 +14,7 @@ Choose whether you want minified CSS, development CSS or .LESS files and publish
  - Choose Administration >> Settings >> Advanced >> Appearance >> Frontend themes
  - Select `Create new`.
  - Type in a userfriendly name.
- - Type in a path similar to `~/App_Data/Sitefinity/WebsiteTemplates/Boilerplate/App_Themes/Boilerplate`
+ - Type in a path similar to `~/App_Data/Sitefinity/WebsiteTemplates/Boilerplate/App_Themes/Bootstrap`
  - Select `Save Changes`
 
  - Choose Design >> Page Templates
@@ -27,7 +27,7 @@ Choose whether you want minified CSS, development CSS or .LESS files and publish
  - Select `Use selected` and `Create and go to add content`.
 
  - On the template editor screen choose `Theme` on the top right part of the screen.
- - Select `Boilerplate` from the dropdown to apply our theme to our template.
+ - Select `Bootstrap` from the dropdown to apply our theme to our template.
 
 ### Automatic installation with Thunder
  - Ensure a valid connection to your Sitefinity installation exists.
