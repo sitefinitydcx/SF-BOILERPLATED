@@ -40,7 +40,9 @@
                     <asp:ScriptReference Name="MicrosoftAjax.js" Assembly="System.Web.Extensions" />
                     <asp:ScriptReference Name="MicrosoftAjaxWebForms.js" Assembly="System.Web.Extensions" />
                     <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" />
+                    <asp:ScriptReference Path="~/App_Data/Sitefinity/WebsiteTemplates/twbs/JS/Modernizr-2.6.2.min.js" />
                     <asp:ScriptReference Name="Telerik.Sitefinity.Resources.Scripts.jquery-1.8.3.min.js" Assembly="Telerik.Sitefinity.Resources" />
+                    <asp:ScriptReference Name="Telerik.Sitefinity.Resources.Scripts.Kendo.kendo.web.min.js" Assembly="Telerik.Sitefinity.Resources" />
                     <asp:ScriptReference Path="~/App_Data/Sitefinity/WebsiteTemplates/twbs/JS/bootstrap.min.js" />
                 </Scripts>
             </CompositeScript>
