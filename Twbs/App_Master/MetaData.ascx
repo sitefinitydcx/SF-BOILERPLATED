@@ -11,10 +11,10 @@
 <meta name="msapplication-starturl" content="./" />
 <meta name="msapplication-navbutton-color" content="#E72C53" />
 <meta name="msapplication-TileColor" content="#E72C53" />
-<meta name="msapplication-TileImage" content="../Sitefinity/WebsiteTemplates/twbs/App_Themes/twbs/Icons/apple-touch-icon-144x144-precomposed.png" />
-<link rel="shortcut icon" href="../Sitefinity/WebsiteTemplates/twbs/App_Themes/twbs/Icons/favicon.ico" />
-<link rel="shortcut icon" href="../Sitefinity/WebsiteTemplates/twbs/App_Themes/twbs/Icons/apple-touch-icon-144x144-precomposed.png" />
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../Sitefinity/WebsiteTemplates/twbs/App_Themes/twbs/Icons/apple-touch-icon-144x144-precomposed.png" />
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../Sitefinity/WebsiteTemplates/twbs/App_Themes/twbs/Icons/apple-touch-icon-114x114-precomposed.png" />
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../Sitefinity/WebsiteTemplates/twbs/App_Themes/twbs/Icons/apple-touch-icon-72x72-precomposed.png" />
-<link rel="apple-touch-icon-precomposed" href="../Sitefinity/WebsiteTemplates/twbs/App_Themes/twbs/Icons/apple-touch-icon-57x57-precomposed.png" />
+<meta name="msapplication-TileImage" content='<%= Page.ResolveUrl("~/Sitefinity/WebsiteTemplates/twbs/App_Themes/twbs/Icons/apple-touch-icon-144x144-precomposed.png")%>' />
+<link rel="shortcut icon" href='<%= Page.ResolveUrl("~/Sitefinity/WebsiteTemplates/twbs/App_Themes/twbs/Icons/apple-touch-icon-144x144-precomposed.png")%>' />
+<link rel="shortcut icon" href='<%= Page.ResolveUrl("~/Sitefinity/WebsiteTemplates/twbs/App_Themes/twbs/Icons/apple-touch-icon-144x144-precomposed.png")%>' />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href='<%= Page.ResolveUrl("~/Sitefinity/WebsiteTemplates/twbs/App_Themes/twbs/Icons/apple-touch-icon-144x144-precomposed.png")%>' />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href='<%= Page.ResolveUrl("~/Sitefinity/WebsiteTemplates/twbs/App_Themes/twbs/Icons/apple-touch-icon-114x114-precomposed.png")%>' />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href='<%= Page.ResolveUrl("~/Sitefinity/WebsiteTemplates/twbs/App_Themes/twbs/Icons/apple-touch-icon-72x72-precomposed.png")%>' />
+<link rel="apple-touch-icon-precomposed" href='<%= Page.ResolveUrl("~/Sitefinity/WebsiteTemplates/twbs/App_Themes/twbs/Icons/apple-touch-icon-57x57-precomposed.png")%>' />
