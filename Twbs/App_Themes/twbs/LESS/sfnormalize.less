@@ -1,7 +1,7 @@
 ﻿/*!
- * ============================================================================ 
+ * =========================================================================== 
  * SF|Boilerplated based on Bootstrap v3.0.0 | sfnormalize.less
- * ============================================================================ 
+ * ===========================================================================
  */
 
 /*  ------------------------------------------------------------------------*/
@@ -12,24 +12,18 @@
 /*  ------------------------------------------------------------------------*/
 /* #endregion */
 /*  ------------------------------------------------------------------------*/
-/* #region Bootstrap plus fixes                                             */
-/*  ------------------------------------------------------------------------*/
-@import "../LESS/bootstrap.less";
-/*  ------------------------------------------------------------------------*/
-@-webkit-viewport { width: device-width; }
-@-moz-viewport { width: device-width; }
-@-ms-viewport { width: device-width; }
-@-o-viewport { width: device-width; }
-@viewport { width: device-width; }
-/*  ------------------------------------------------------------------------*/
-*, *:before, *:after { -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; }
-.sfPublicWrapper { *, *:before, *:after { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }}
+/* #region kendo UI + kendo Bootstrap theme import */
+/*  -----------------------------------------------------------------------*/
+@import "../LESS/kendo/kendo.common.less";
+@import "../LESS/kendo/kendo.bootstrap.less";
+/* kendo-fix to adjust for bootstrap's border-box property */
+[class^="k-"], [class*="k-"] { -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
 /*  ------------------------------------------------------------------------*/
 /* #endregion */
 /*  ------------------------------------------------------------------------*/
-/* #region sitefinity grid styles */
+/* #region Sitefinity grid styles */
 /*  ------------------------------------------------------------------------*/
-.sf_cols { margin: 0; padding: 0; width: 100%; -ms-zoom: 1; zoom: 1; }
+.sf_cols { margin: 0; padding: 0; min-width: 100%; width: auto; -ms-zoom: 1; zoom: 1; }
     .sf_cols:before, .sf_cols:after { display: table; content: ""; }
     .sf_cols:after { clear: both; }
 .sf_colsOut + .sf_colsOut { *margin-left: -1px!important; }
@@ -52,14 +46,30 @@
 /*  ------------------------------------------------------------------------*/
 /* #endregion */
 /*  ------------------------------------------------------------------------*/
+/* #region Bootstrap 3 and fixes                                            */
+/*  ------------------------------------------------------------------------*/
+@import "../LESS/bootstrap/bootstrap.less";
+/* bootstrap-fix to adjust for windowsphone 8 viewport */
+@-webkit-viewport { width: device-width; }
+@-moz-viewport { width: device-width; }
+@-ms-viewport { width: device-width; }
+@-o-viewport { width: device-width; }
+@viewport { width: device-width; }
+/* bootstrap-fix to adjust for box-sizing with sitefinity's backend */
+*, *:before, *:after { -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+.sfPublicWrapper {
+    *, *:before, *:after { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+}
+/*  ------------------------------------------------------------------------*/
+/* #endregion */
+/*  ------------------------------------------------------------------------*/
 /* #region sitefinity and helper styles */
 /*  ------------------------------------------------------------------------*/
-body.standard.sfPageEditor.zeContentMode div#ScriptWrapper { display: block; background: @brand-info; -moz-opacity: 0.6; opacity: 0.6; font-size:small;text-align:center; }
-body.standard.sfPageEditor.zeContentMode div#ScriptWrapper:before { content:"-- ONLY PLACE STYLE WIDGETS AND SCRIPT WIDGETS BELOW THIS AREA --";}
+body.standard.sfPageEditor.zeContentMode div#ScriptWrapper { display: block; background: @brand-info; text-align: center; font-size: small; -moz-opacity: 0.6; opacity: 0.6; }
+    body.standard.sfPageEditor.zeContentMode div#ScriptWrapper:before { content: "-- ONLY PLACE STYLE WIDGETS AND SCRIPT WIDGETS BELOW THIS AREA --"; }
 .ScriptWrapper, .sfDisplayNone { display: none; }
 .sfimageWrp { overflow: hidden; }
     .sfimageWrp img, .sfContentBlock img { max-width: 100%; width: auto; height: auto; }
-/*.chromeframe { margin: 0.2em 0; padding: 0.2em 0; background: @reset_color-hr; color: @reset_mark-color-fg; }*/
 .sfLbl { display: block; margin-bottom: 10px; font-weight: bold; }
 .sfClearfix:before, .sfClearfix:after, .sfprofileArticleLikeWrp:before, .sfprofileArticleLikeWrp:after, .sfprofileListLikeWrp:before, .sfprofileListLikeWrp:after { display: table; content: ""; }
 .sfClearfix:after, .sfprofileArticleLikeWrp:after, .sfprofileListLikeWrp:after { clear: both; }
