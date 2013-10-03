@@ -1,6 +1,6 @@
 ﻿/*!
  * ============================================================================ 
- * SF|Boilerplated based on H5BP v4.2.0 | sfnormalize.less
+ * SF|Boilerplated based on H5BP v4.3.0 | sfnormalize.less
  * ============================================================================ 
  */
 
@@ -18,24 +18,20 @@
 /*  ------------------------------------------------------------------------*/
 /* #endregion */
 /*  ------------------------------------------------------------------------*/
-/* #region normalization and reset styles */
+/* #region normalize v1.1.3  */
 /*  ------------------------------------------------------------------------*/
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary { display: block; }
 audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
-    audio:not([controls]) { display: none; height: 0; }
 [hidden] { display: none; }
+audio:not([controls]) { display: none; height: 0; }
 html { -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; font-size: 100%; }
-body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td { margin: 0; padding: 0; }
-    body:focus, div:focus, fieldset:focus, span:focus, li:focus, p:focus, a, a:active, a:hover { outline: 0; }
-abbr, acronym, fieldset, img { border: 0; }
-address, caption, cite, code, dfn, th, var { font-weight: normal; font-style: normal; }
-caption, th { text-align: left; }
+body, figure, form { margin: 0; }
+a:focus { outline: thin dotted; }
+a:active, a:hover { outline: 0; }
 abbr[title] { border-bottom: 1px dotted; }
 b, strong { font-weight: bold; }
 blockquote { margin: 1em 40px; }
 dfn { font-style: italic; }
-img { -ms-interpolation-mode: bicubic; border: 0; vertical-align: middle; }
-a:focus { outline: thin dotted; }
 p, pre { margin: 1em 0; }
 pre { white-space: pre-wrap; white-space: pre; -ms-word-wrap: break-word; word-wrap: break-word; }
 q { quotes: none; }
@@ -44,11 +40,12 @@ small { font-size: 80%; }
 sub, sup { position: relative; vertical-align: baseline; font-size: 75%; line-height: 0; }
 sup { top: -0.5em; }
 sub { bottom: -0.25em; }
-dl { margin: 1em 0; }
-dd, menu, ol, ul { margin: 0 0 0 40px; }
+dl, menu, ol, ul { margin: 1em 0; }
+dd { margin: 0 0 0 40px; }
+menu, ol, ul { padding: 0 0 0 40px; }
 nav ul, nav ol { list-style: none; list-style-image: none; }
+img { -ms-interpolation-mode: bicubic; border: 0; }
 svg:not(:root) { overflow: hidden; }
-figure, form { margin: 0; }
 legend { *margin-left: -7px; padding: 0; border: 0; white-space: normal; }
 button, input, select, textarea { margin: 0; vertical-align: baseline; *vertical-align: middle; font-size: 100%; }
 button, input { line-height: normal; }
@@ -57,9 +54,10 @@ button, html input[type="button"], input[type="reset"], input[type="submit"] { -
     button[disabled], html input[disabled] { cursor: default; }
 input[type="checkbox"], input[type="radio"] { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 0; *width: 13px; *height: 13px; }
 input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
-    input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+    input[type="search"]::-webkit-search-cancel-button,
+    input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
 button::-moz-focus-inner, input::-moz-focus-inner { padding: 0; border: 0; }
-textarea { overflow: auto; vertical-align: top; resize: vertical; }
+textarea { overflow: auto; vertical-align: top; }
 table { border-spacing: 0; border-collapse: collapse; }
 /*  ------------------------------------------------------------------------*/
 /* #endregion */
@@ -67,10 +65,9 @@ table { border-spacing: 0; border-collapse: collapse; }
 /* #region typography and color defaults */
 /*  ------------------------------------------------------------------------*/
 html, button, input, select, textarea { color: @reset_color-text; font-family: @reset_font-family; }
-::-moz-selection, ::selection { background: @reset_selection-color-bg; -webkit-text-shadow: none; text-shadow: none; }
 mark { background: @reset_mark-color-bg; color: @reset_mark-color-fg; }
 fieldset { margin: 0 2px; padding: 0.35em 0.625em 0.75em; border: 1px solid @reset_color-fieldset; }
-hr { display: block; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; margin: 1em 0; padding: 0; height: 1px; border: 0; border-top: 1px solid @reset_color-hr; }
+hr { -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; height: 0; }
 /*  ------------------------------------------------------------------------*/
 body { font-size: @reset_font-size; line-height: @reset_line-height; }
 code, kbd, pre, samp { font-size: @reset_font-size; font-family: monospace, serif; _font-family: 'courier new', monospace; }
@@ -110,8 +107,8 @@ h6 { margin: 2.33em 0; font-size: 0.67em; }
 /*  ------------------------------------------------------------------------*/
 /* #region sitefinity and helper styles */
 /*  ------------------------------------------------------------------------*/
-body.standard.sfPageEditor.zeContentMode div#ScriptWrapper { display: block; background: @reset_mark-color-bg; -moz-opacity: 0.4; opacity: 0.4; font-size:small;text-align:center; }
-body.standard.sfPageEditor.zeContentMode div#ScriptWrapper:before { content:"-- ONLY PLACE STYLE WIDGETS AND SCRIPT WIDGETS BELOW THIS AREA --";}
+body.standard.sfPageEditor.zeContentMode div#ScriptWrapper { display: block; background: @reset_mark-color-bg; text-align: center; font-size: small; -moz-opacity: 0.4; opacity: 0.4; }
+    body.standard.sfPageEditor.zeContentMode div#ScriptWrapper:before { content: "-- ONLY PLACE STYLE WIDGETS AND SCRIPT WIDGETS BELOW THIS AREA --"; }
 .ScriptWrapper, .sfDisplayNone { display: none; }
 .sfimageWrp { overflow-x: hidden; }
     .sfimageWrp img, .sfContentBlock img { max-width: 100%; width: auto; height: auto; }
@@ -123,9 +120,9 @@ body.standard.sfPageEditor.zeContentMode div#ScriptWrapper:before { content:"-- 
 .sfDisplayNone { display: none; }
 .ir { overflow: hidden; border: 0; background-color: transparent; *text-indent: -9999px; }
     .ir:before { display: block; width: 0; height: 150%; content: ""; }
-.left { float: left; } 
-.right { float: right; } 
-.visible { visibility: visible; } 
+.left { float: left; }
+.right { float: right; }
+.visible { visibility: visible; }
 .hidden { display: none !important; visibility: hidden; }
 .visuallyhidden { position: absolute; overflow: hidden; clip: rect(0 0 0 0); margin: -1px; padding: 0; width: 1px; height: 1px; border: 0; }
     .visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { position: static; overflow: visible; clip: auto; margin: 0; width: auto; height: auto; }
@@ -133,19 +130,20 @@ body.standard.sfPageEditor.zeContentMode div#ScriptWrapper:before { content:"-- 
 .clearfix:before, .clearfix:after { display: table; content: " "; }
 .clearfix:after { clear: both; }
 .clearfix { *zoom: 1; }
+.browsehappy { margin: 0.2em 0; padding: 0.2em 0; background: @reset_color-hr; color: @reset_mark-color-fg; }
 /*  ------------------------------------------------------------------------*/
 /* #endregion */
 /*  ------------------------------------------------------------------------*/
 
 /*  ------------------------------------------------------------------------*/
 @media print {
-    * { background: transparent !important; -webkit-box-shadow: none !important; box-shadow: none !important; color: @reset_mark-color-fg !important; -webkit-text-shadow: none !important; text-shadow: none !important; }
+    * { background: transparent !important; box-shadow: none !important; color: @reset_mark-color-fg !important; -webkit-text-shadow: none !important; text-shadow: none !important; }
     a, a:visited { text-decoration: underline; }
         a[href]:after { content: " (" attr(href) ")"; }
     abbr[title]:after { content: " (" attr(title) ")"; }
     .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }
-    pre, blockquote { border: 1px solid @reset_color-hr; page-break-inside: avoid; }
-    thead { display: table-header-group; }
+    pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+    thead { /* h5bp.com/t */ display: table-header-group; }
     tr, img { page-break-inside: avoid; }
     img { max-width: 100% !important; }
     @page { margin: 0.5cm; }

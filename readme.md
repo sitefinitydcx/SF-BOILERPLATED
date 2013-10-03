@@ -6,7 +6,7 @@ Empty starting points for easy Sitefinity development including ports of HTML5Bo
 Read the readme.md in each framework folder for installation instructions.
 
 
-## Boilerplate (HTML5Boilerplate port)
+## Boilerplate (HTML5Boilerplate  v`4.3.0`)
 
 * A Sitefinity optimized port of the HTML5 Boilerplate project [http://html5boilerplate.com]
 * HTML5 ready, with ARIA role definition and fallback browser support through Modernizr

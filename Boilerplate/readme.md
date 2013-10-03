@@ -3,7 +3,7 @@ An empty starting point for template & theme development based on HTML5Boilerpla
 This theme has no widget styling, but offers only a clean cross-browser normalized startingpoint, weighing only 3.9Kb without any extra markup.
 Comes with 1 masterpage, 2 css files (normalize, layout) and pre-packed with minified production ready Modernizr.
   
-Compatibility: Sitefinity `6.x`. HTML5Boilerplate `4.2.0`.
+Compatibility: Sitefinity `6.x`. HTML5Boilerplate `4.3.0`.
   
 
 ## Quick start

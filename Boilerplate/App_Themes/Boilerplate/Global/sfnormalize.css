@@ -1,6 +1,6 @@
 ﻿/*!
  * ============================================================================ 
- * SF|Boilerplated based on H5BP v4.2.0 | sfnormalize.less
+ * SF|Boilerplated based on H5BP v4.3.0 | sfnormalize.less
  * ============================================================================ 
  */
 /* #region less variables and mixins */
@@ -8,7 +8,7 @@
 /*  ------------------------------------------------------------------------*/
 /* #endregion */
 /*  ------------------------------------------------------------------------*/
-/* #region normalization and reset styles */
+/* #region normalize v1.1.3  */
 /*  ------------------------------------------------------------------------*/
 article,
 aside,
@@ -31,12 +31,12 @@ video {
   *display: inline;
   *zoom: 1;
 }
+[hidden] {
+  display: none;
+}
 audio:not([controls]) {
   display: none;
   height: 0;
-}
-[hidden] {
-  display: none;
 }
 html {
   -ms-text-size-adjust: 100%;
@@ -44,61 +44,16 @@ html {
   font-size: 100%;
 }
 body,
-div,
-dl,
-dt,
-dd,
-ul,
-ol,
-li,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-pre,
-form,
-fieldset,
-input,
-textarea,
-p,
-blockquote,
-th,
-td {
+figure,
+form {
   margin: 0;
-  padding: 0;
 }
-body:focus,
-div:focus,
-fieldset:focus,
-span:focus,
-li:focus,
-p:focus,
-a,
+a:focus {
+  outline: thin dotted;
+}
 a:active,
 a:hover {
   outline: 0;
-}
-abbr,
-acronym,
-fieldset,
-img {
-  border: 0;
-}
-address,
-caption,
-cite,
-code,
-dfn,
-th,
-var {
-  font-weight: normal;
-  font-style: normal;
-}
-caption,
-th {
-  text-align: left;
 }
 abbr[title] {
   border-bottom: 1px dotted;
@@ -112,14 +67,6 @@ blockquote {
 }
 dfn {
   font-style: italic;
-}
-img {
-  -ms-interpolation-mode: bicubic;
-  border: 0;
-  vertical-align: middle;
-}
-a:focus {
-  outline: thin dotted;
 }
 p,
 pre {
@@ -155,26 +102,31 @@ sup {
 sub {
   bottom: -0.25em;
 }
-dl {
-  margin: 1em 0;
-}
-dd,
+dl,
 menu,
 ol,
 ul {
+  margin: 1em 0;
+}
+dd {
   margin: 0 0 0 40px;
+}
+menu,
+ol,
+ul {
+  padding: 0 0 0 40px;
 }
 nav ul,
 nav ol {
   list-style: none;
   list-style-image: none;
 }
+img {
+  -ms-interpolation-mode: bicubic;
+  border: 0;
+}
 svg:not(:root) {
   overflow: hidden;
-}
-figure,
-form {
-  margin: 0;
 }
 legend {
   *margin-left: -7px;
@@ -238,7 +190,6 @@ input::-moz-focus-inner {
 textarea {
   overflow: auto;
   vertical-align: top;
-  resize: vertical;
 }
 table {
   border-spacing: 0;
@@ -257,12 +208,6 @@ textarea {
   color: #222222;
   font-family: sans-serif;
 }
-::-moz-selection,
-::selection {
-  background: #b3d4fc;
-  -webkit-text-shadow: none;
-  text-shadow: none;
-}
 mark {
   background: #ffff00;
   color: #000000;
@@ -273,15 +218,10 @@ fieldset {
   border: 1px solid #c0c0c0;
 }
 hr {
-  display: block;
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
-  margin: 1em 0;
-  padding: 0;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #cccccc;
+  height: 0;
 }
 /*  ------------------------------------------------------------------------*/
 body {
@@ -455,10 +395,10 @@ h6 {
 body.standard.sfPageEditor.zeContentMode div#ScriptWrapper {
   display: block;
   background: #ffff00;
+  text-align: center;
+  font-size: small;
   -moz-opacity: 0.4;
   opacity: 0.4;
-  font-size: small;
-  text-align: center;
 }
 body.standard.sfPageEditor.zeContentMode div#ScriptWrapper:before {
   content: "-- ONLY PLACE STYLE WIDGETS AND SCRIPT WIDGETS BELOW THIS AREA --";
@@ -568,6 +508,12 @@ body.standard.sfPageEditor.zeContentMode div#ScriptWrapper:before {
 .clearfix {
   *zoom: 1;
 }
+.browsehappy {
+  margin: 0.2em 0;
+  padding: 0.2em 0;
+  background: #cccccc;
+  color: #000000;
+}
 /*  ------------------------------------------------------------------------*/
 /* #endregion */
 /*  ------------------------------------------------------------------------*/
@@ -575,7 +521,6 @@ body.standard.sfPageEditor.zeContentMode div#ScriptWrapper:before {
 @media print {
   * {
     background: transparent !important;
-    -webkit-box-shadow: none !important;
     box-shadow: none !important;
     color: #000000 !important;
     -webkit-text-shadow: none !important;
@@ -598,10 +543,11 @@ body.standard.sfPageEditor.zeContentMode div#ScriptWrapper:before {
   }
   pre,
   blockquote {
-    border: 1px solid #cccccc;
+    border: 1px solid #999;
     page-break-inside: avoid;
   }
   thead {
+    /* h5bp.com/t */
     display: table-header-group;
   }
   tr,
