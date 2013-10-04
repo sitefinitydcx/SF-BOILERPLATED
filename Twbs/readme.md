@@ -44,20 +44,20 @@ Choose whether you want minified CSS, development CSS or .LESS files and publish
 * Additional layout widgets included for Twitter Bootstrap 3
 * Twitter Bootstrap is 'untouched' to allow for easy updating (NuGet/GitHub) or use with SASS port.
 
-## LESS vs CSS
+### LESS vs CSS
 Inside the App_Themes/Global directory you'll find 3 types of files, .less, .min.css and .css.
 * The .min.css files are minified and production ready.
 * The .css are development css files.
 * The .less files are the .LESS versions with variables of the .css files.
 If you're comfortable with .less, use it otherwise just delete them. If you don't need minified css, delete the .min.css files.
 
-## 1 Masterpage
+### 1 Masterpage
 Inside the App_Master directory you'll find only 1 masterpage.
 It is a HTML5 accessibility enhanced template based on 1 column layout, for easy alteration inside Sitefinity's layout editor. 
 Twitter Bootstrap's regions are included, section and footer are defined with all the ARIA landmark roles. 
 Complete with extra scriptwrapper placeholder which won't output on live sites so script & stylewidgets can be safely placed without breaking the PageEditor.
 
-## KendoUI
+### KendoUI
 Kendo UI Web is now included by default and loaded from Sitefinity Resource to ensure proper compatibility.
 If you don't need/want Kendo UI remove script reference from .Masterpage and remove the KendoUI region from sfnormalize.less (or css file). 
 
@@ -72,3 +72,6 @@ Meta-tags are extracted into separate MetaData.ascx to keep Masterpage clean and
 ## Sitefinity-icons
 Included are all precomposed icons for the iPhone/iPad & Android devices, and Windows 8 pinning. 
 The favicon.ico comes in 2 flavors. The default favicon.ico is 64x64 which is enhanced for IE9/IE10 sitepinning, an old 16x16 icon is included.
+
+## Layout widgets
+9 Default Twitter Bootstrap layout regions/widgets, including sample ToolboxesConfig.config can be found here (https://github.com/jbokkers/SF-BOILERPLATED/tree/master/LayoutControls)

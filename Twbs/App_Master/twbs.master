@@ -25,7 +25,7 @@
     <title></title>
 </head>
 <!--  ========================================================================== -->
-<!--  upd: 29/08/2013 | Based on Twitter Bootstrap v3.0.0                        -->
+<!--  upd: 04/10/2013 | Based on Twitter Bootstrap v3.0.0                        -->
 <!--  ========================================================================== -->
 <!-- TODO: Change paths /Sitefinity/WebsiteTemplates/twbs appropiately           -->
 <!--  ========================================================================== -->
@@ -51,42 +51,25 @@
             <asp:Literal ID="skipToMainContentLiteral" runat="server" Text='<%$Resources:PageResources, SkipToTheMainContent %>' /></a>
         <!--  ============================================================================== -->
         <div id="PublicWrapper" class="sfPublicWrapper container">
-            <!--  ========================================================================== -->
-            <!-- header section -->
-            <section id="HeaderWrapper" class="sf_cols row" role="region" clientidmode="static" runat="server">
-                <div id="cpw_headerwrapper" class="sf_colsOut">
-                    <!--  ================================================================== -->
-                    <header id="cpw_header" class="sf_colsIn col-md-12">
-                        <asp:ContentPlaceHolder ID="cph_header" runat="server" />
-                    </header>
-                    <!--  ================================================================== -->
-                </div>
+            <!--  ============================================================================== -->
+            <header id="HeaderWrapper" role="heading" clientidmode="static" runat="server" class="">
+                <asp:ContentPlaceHolder ID="cph_header" runat="server" />
+            </header>
+            <!--  ============================================================================== -->
+            <nav id="NavWrapper" role="region" clientidmode="static" runat="server" class="">
+                <asp:ContentPlaceHolder ID="cph_nav" runat="server" />
+            </nav>
+            <!--  ============================================================================== -->
+            <section id="MainWrapper" role="region" clientidmode="static" runat="server" class="">
+                <asp:ContentPlaceHolder ID="cph_main" runat="server" />
             </section>
-            <!--  ========================================================================== -->
-            <!-- main content section-->
-            <section id="MainWrapper" class="sf_cols row" role="region" clientidmode="static" runat="server">
-                <div id="cpw_mainwrapper" class="sf_colsOut">
-                    <!--  ================================================================== -->
-                    <article id="cpw_main" class="sf_colsIn col-md-12" role="main">
-                        <asp:ContentPlaceHolder ID="cph_main" runat="server" />
-                    </article>
-                    <!--  ================================================================== -->
-                </div>
-                <!--  ====================================================================== -->
-            </section>
-            <!--  ========================================================================== -->
-            <!-- footer section -->
-            <section id="FooterWrapper" class="sf_cols row" role="region" clientidmode="static" runat="server">
-                <div id="cpw_footerwrapper" class="sf_colsOut">
-                    <!--  ================================================================== -->
-                    <footer id="cpw_footer" class="sf_colsIn col-md-12" role="contentinfo">
-                        <asp:ContentPlaceHolder ID="cph_footer" runat="server" />
-                    </footer>
-                    <!--  ================================================================== -->
-                </div>
-            </section>
-            <!--  ========================================================================== -->
+            <!--  ============================================================================== -->
+            <footer id="FooterWrapper" role="region" clientidmode="static" runat="server" class="">
+                <asp:ContentPlaceHolder ID="cph_footer" runat="server" />
+            </footer>
         </div>
+        <!--  ============================================================================== -->
+
         <!--  ============================================================================== -->
         <!-- no content below - scriptwrapper is purely for js or css widgets in sitefinity  -->
         <!--  ============================================================================== -->
