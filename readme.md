@@ -39,10 +39,15 @@ Read the readme.md in each framework folder for installation instructions.
 The favicon.ico comes in 2 flavors. The default favicon.ico is 64x64 which is enhanced for IE9/IE10 sitepinning, an old 16x16 icon is included.
 All icons are included and referenced in the respective projects, the sitefinity-icons folder is just 'extra'.
 
+## LayoutControls
+* 7 Pre-built layout regions/widgets, compatible with Twitter Bootstrap v`2.3.1`and Sitefinity. 
+* 9 Pre-built layout regions/widgets, compatible with Twitter Bootstrap v`3.0.0`and Sitefinity. 
+* Sample Toolboxesconfig.config file to register the regions with your Sitefinity project. 
 
-## Contributing
+
+### Contributing
 Credits are due where credits go and special thanks to @stevemcniven, @rollerboy1 and @timw255. 
-For comments or questions use twitter @jbokkers
+For comments or questions use Github or twitter @jbokkers
 
 
 ## License
