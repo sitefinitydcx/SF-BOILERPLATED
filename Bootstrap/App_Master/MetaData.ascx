@@ -1,7 +1,7 @@
 ﻿<%@ Control Language="C#" %>
 <meta name="HandheldFriendly" content="True" />
 <meta http-equiv="cleartype" content="on" />
-<meta name="title" content="HTML5 bootstrap template for Sitefinity compatible with Sitefinity v6" />
+<meta name="title" content="Twitter Bootstrap v2.3.1 template for Sitefinity compatible with Sitefinity v6" />
 <meta name="author" content="Jochem Bökkers" />
 <meta name="description" content="Description" />
 <meta name="application-name" content="Website applicationname shown above taskbar preview" />

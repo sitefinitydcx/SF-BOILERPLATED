@@ -3,7 +3,7 @@
 Empty starting points for easy Sitefinity development including ports of HTML5Boilerplate project and Twitter Bootstrap.
 
 ### Quick start
-Read the readme.md in each framework folder for installation instructions.
+Read the readme.md in each theme/framework folder for installation instructions.
 
 
 ## Boilerplate (HTML5Boilerplate  v`4.3.0`)

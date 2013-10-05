@@ -16,14 +16,11 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <uc:MetaData runat="server" ID="FalafelMetaData" />
-    <meta name="title" content="HTML5 Boilerplate template for Sitefinity compatible with Sitefinity v5.0-v5.2" />
-    <meta name="author" content="jbokkers" />
-    <meta name="description" content="description" />
+    <uc:MetaData runat="server" ID="MasterMetaData" />
     <title></title>
 </head>
 <!--  ========================================================================== -->
-<!--  upd: 17/05/2013 | Based on Twitter Bootstrap v2.3.1                        -->
+<!--  upd: 04/10/2013 | Based on Twitter Bootstrap v2.3.1                        -->
 <!--  ========================================================================== -->
 <!-- TODO: Change paths /Sitefinity/WebsiteTemplates/Bootstrap appropiately      -->
 <!--  ========================================================================== -->
@@ -32,7 +29,7 @@
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
     <form id="aspnetForm" runat="server">
-        <telerik:RadScriptManager ID="RadScriptManager1" CompositeScript-ScriptMode="Release" EnableScriptGlobalization="True" EnableScriptLocalization="False" runat="server" CompositeScript-NotifyScriptLoaded="True" LoadScriptsBeforeUI="True" OutputCompression="Forced">
+        <telerik:radscriptmanager id="RadScriptManager1" compositescript-scriptmode="Release" enablescriptglobalization="True" enablescriptlocalization="False" runat="server" compositescript-notifyscriptloaded="True" loadscriptsbeforeui="True" outputcompression="Forced">
             <CompositeScript>
                 <Scripts>
                     <asp:ScriptReference Name="MicrosoftAjax.js" Assembly="System.Web.Extensions" />
@@ -42,7 +39,7 @@
                     <asp:ScriptReference Path="~/App_Data/Sitefinity/WebsiteTemplates/Bootstrap/JS/bootstrap.min.js" />
                 </Scripts>
             </CompositeScript>
-        </telerik:RadScriptManager>
+        </telerik:radscriptmanager>
         <a accesskey="s" href="#cpw_main" id="sfSkip" class="visuallyhidden">
             <asp:Literal ID="skipToMainContentLiteral" runat="server" Text='<%$Resources:PageResources, SkipToTheMainContent %>' /></a>
         <!--  ============================================================================== -->
