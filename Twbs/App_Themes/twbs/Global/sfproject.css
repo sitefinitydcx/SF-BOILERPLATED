@@ -5274,13 +5274,38 @@ div.k-imagebrowser-dropzone em {
 .sf_5cols_3_20 .sf_5cols_3in_20,
 .sf_5cols_4_20 .sf_5cols_4in_20,
 .sf_5cols_5_20 .sf_5cols_5in_20 {
-  margin-left: 0px;
+  margin-left: 12px;
 }
 .sf_3cols_3_25,
 .sf_3cols_3_33,
 .sf_4cols_4_25,
 .sf_5cols_5_20 {
   _margin-left: -1px !important;
+}
+/* override fix in case both sitefinity & twbs classes are assigned while we not ruin/exclude one */
+.row .sf_2cols_2_75 .sf_2cols_2in_75,
+.row .sf_2cols_2_67 .sf_2cols_2in_67,
+.row .sf_2cols_2_50 .sf_2cols_2in_50,
+.row .sf_2cols_2_33 .sf_2cols_2in_33,
+.row .sf_2cols_2_25 .sf_2cols_2in_25,
+.row .sf_3cols_2_34 .sf_3cols_2in_34,
+.row .sf_3cols_3_33 .sf_3cols_3in_33,
+.row .sf_3cols_2_50 .sf_3cols_2in_50,
+.row .sf_3cols_3_25 .sf_3cols_3in_25,
+.row .sf_4cols_2_25 .sf_4cols_2in_25,
+.row .sf_4cols_3_25 .sf_4cols_3in_25,
+.row .sf_4cols_4_25 .sf_4cols_4in_25,
+.row .sf_5cols_2_20 .sf_5cols_2in_20,
+.row .sf_5cols_3_20 .sf_5cols_3in_20,
+.row .sf_5cols_4_20 .sf_5cols_4in_20,
+.row .sf_5cols_5_20 .sf_5cols_5in_20 {
+  margin-left: 0px !important;
+}
+.row .sf_3cols_3_25,
+.row .sf_3cols_3_33,
+.row .sf_4cols_4_25,
+.row .sf_5cols_5_20 {
+  _margin-left: 0px!important;
 }
 /*  ------------------------------------------------------------------------*/
 /* #endregion */
@@ -11592,7 +11617,7 @@ body.standard.sfPageEditor.zeContentMode div#ScriptWrapper:before {
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 5px rgba(0, 0, 0, 0.075);
 }
 .navbar .navbar-nav > .active > a {
-  background-color: #f8f8f8;
+  background-color: #e7e7e7;
 }
 .navbar-brand,
 .navbar-nav > li > a {

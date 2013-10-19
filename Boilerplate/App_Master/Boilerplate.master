@@ -25,7 +25,7 @@
     </sf:resourcelinks>
 </head>
 <!--  ========================================================================== -->
-<!--  upd: 03/10/2013 | Based on h5bp.com v4.3.0 | credits go where credits due  -->
+<!--  upd: 19/10/2013 | Based on h5bp.com v4.3.0 | credits go where credits due  -->
 <!--  ========================================================================== -->
 <!-- TODO: Change paths /Sitefinity/WebsiteTemplates/Boilerplate appropiately    -->
 <!-- TODO: Edit MetaData.ascx to adjust properties and paths                     -->
@@ -35,62 +35,62 @@
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <form id="aspnetForm" runat="server">
-        <telerik:RadScriptManager ID="RadScriptManager1" EnableScriptGlobalization="True" EnableScriptLocalization="False" runat="server" ></telerik:RadScriptManager>
-            <a accesskey="s" href="#cpw_main" id="sfSkip" class="visuallyhidden">
-                <asp:Literal ID="skipToMainContentLiteral" runat="server" Text='<%$Resources:PageResources, SkipToTheMainContent %>' /></a>
-            <!--  ============================================================================== -->
-            <div id="PublicWrapper" class="sfPublicWrapper">
-                <!--  ========================================================================== -->
-                <!-- header section -->
-                <section id="HeaderWrapper" class="sf_cols" role="region" runat="server">
-                    <!--  ====================================================================== -->
-                    <div id="cpw_headerwrapper" class="sf_colsOut sf_1col_1_100">
-                        <!--  ================================================================== -->
-                        <header id="cpw_header" class="sf_colsIn sf_1col_1in_100">
-                            <asp:ContentPlaceHolder ID="cph_header" runat="server" />
-                        </header>
-                        <nav id="cpw_navigation" class="sf_colsIn sf_1col_1in_100" role="navigation">
-                            <asp:ContentPlaceHolder ID="cph_navigation" runat="server" />
-                        </nav>
-                        <!--  ================================================================== -->
-                    </div>
-                </section>
-                <!--  ========================================================================== -->
-                <!-- main content section-->
-                <div id="MainWrapper" class="sf_cols" role="region" runat="server">
-                    <!--  ====================================================================== -->
-                    <div id="cpw_mainwrapper" class="sf_colsOut sf_1col_1_100">
-                        <!--  ================================================================== -->
-                        <article id="cpw_main" class="sf_colsIn sf_1col_1in_100" role="main">
-                            <asp:ContentPlaceHolder ID="cph_main" runat="server" />
-                        </article>
-                        <!--  ================================================================== -->
-                    </div>
-                    <!--  ====================================================================== -->
+        <telerik:RadScriptManager ID="RadScriptManager1" EnableScriptGlobalization="True" EnableScriptLocalization="False" runat="server"></telerik:RadScriptManager>
+        <a accesskey="s" href="#cpw_main" id="sfSkip" class="visuallyhidden">
+            <asp:Literal ID="skipToMainContentLiteral" runat="server" Text='<%$Resources:PageResources, SkipToTheMainContent %>' /></a>
+        <!--  ============================================================================== -->
+        <div id="PublicWrapper" class="sfPublicWrapper">
+            <!--  ========================================================================== -->
+            <!-- header section -->
+            <section id="HeaderWrapper" class="sf_cols" role="region" runat="server">
+                <!--  ====================================================================== -->
+                <div id="cpw_headerwrapper" class="sf_colsOut sf_1col_1_100">
+                    <!--  ================================================================== -->
+                    <header id="cpw_header" class="sf_colsIn sf_1col_1in_100">
+                        <asp:ContentPlaceHolder ID="cph_header" runat="server" />
+                    </header>
+                    <nav id="cpw_navigation" class="sf_colsIn sf_1col_1in_100" role="navigation">
+                        <asp:ContentPlaceHolder ID="cph_navigation" runat="server" />
+                    </nav>
+                    <!--  ================================================================== -->
                 </div>
-                <!--  ========================================================================== -->
-                <!-- footer section -->
-                <section id="FooterWrapper" class="sf_cols" role="region" runat="server">
-                    <!--  ====================================================================== -->
-                    <div id="cpw_footerwrapper" class="sf_colsOut sf_1col_1_100">
-                        <!--  ================================================================== -->
-                        <footer id="cpw_footer" class="sf_colsIn sf_1col_1in_100" role="contentinfo">
-                            <asp:ContentPlaceHolder ID="cph_footer" runat="server" />
-                        </footer>
-                        <!--  ================================================================== -->
-                    </div>
-                    <!--  ====================================================================== -->
-                </section>
-                <!--  ========================================================================== -->
+            </section>
+            <!--  ========================================================================== -->
+            <!-- main content section-->
+            <div id="MainWrapper" class="sf_cols" role="region" runat="server">
+                <!--  ====================================================================== -->
+                <div id="cpw_mainwrapper" class="sf_colsOut sf_1col_1_100">
+                    <!--  ================================================================== -->
+                    <article id="cpw_main" class="sf_colsIn sf_1col_1in_100" role="main">
+                        <asp:ContentPlaceHolder ID="cph_main" runat="server" />
+                    </article>
+                    <!--  ================================================================== -->
+                </div>
+                <!--  ====================================================================== -->
             </div>
-            <!--  ============================================================================== -->
-            <!-- no content below - scriptwrapper is purely for js or css widgets in sitefinity  -->
-            <!--  ============================================================================== -->
-            <div id="ScriptWrapper" runat="server" title="Only place scripts and styles in this region">
-                <script type="text/javascript" src="~/Sitefinity/WebsiteTemplates/Boilerplate/JS/script.bottom.min.js"></script>
-                <asp:ContentPlaceHolder ID="cph_scriptsandstyles" runat="server" />
-                <!--  ========================================================================== -->
-            </div>
+            <!--  ========================================================================== -->
+            <!-- footer section -->
+            <section id="FooterWrapper" class="sf_cols" role="region" runat="server">
+                <!--  ====================================================================== -->
+                <div id="cpw_footerwrapper" class="sf_colsOut sf_1col_1_100">
+                    <!--  ================================================================== -->
+                    <footer id="cpw_footer" class="sf_colsIn sf_1col_1in_100" role="contentinfo">
+                        <asp:ContentPlaceHolder ID="cph_footer" runat="server" />
+                    </footer>
+                    <!--  ================================================================== -->
+                </div>
+                <!--  ====================================================================== -->
+            </section>
+            <!--  ========================================================================== -->
+        </div>
+        <!--  ============================================================================== -->
+        <!-- no content below - scriptwrapper is purely for js or css widgets in sitefinity  -->
+        <!--  ============================================================================== -->
+        <div id="ScriptWrapper" runat="server" title="Only place scripts and styles in this region">
+            <script type="text/javascript" src="<%= Page.ResolveUrl("~/Sitefinity/WebsiteTemplates/Boilerplate/JS/script.bottom.min.js") %>"></script>
+            <asp:ContentPlaceHolder ID="cph_scriptsandstyles" runat="server" />
+            <!--  ========================================================================== -->
+        </div>
     </form>
 </body>
 </html>
