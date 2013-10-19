@@ -16,5 +16,4 @@ For a demo video visit: http://www.youtube.com/watch?v=IXY8TEB2mE4
 
 ### Twitter Bootstrap v3.0
  - 7 Pre-built layouts comparable to the Sitefinity default layout-regions.
- - 3 Additional nested layouts.
  - Deep nesting of layouts is fully supported.

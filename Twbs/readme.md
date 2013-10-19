@@ -74,4 +74,4 @@ Included are all precomposed icons for the iPhone/iPad & Android devices, and Wi
 The favicon.ico comes in 2 flavors. The default favicon.ico is 64x64 which is enhanced for IE9/IE10 sitepinning, an old 16x16 icon is included.
 
 ## Layout widgets
-9 Default Twitter Bootstrap layout regions/widgets, including sample ToolboxesConfig.config can be found here (https://github.com/jbokkers/SF-BOILERPLATED/tree/master/LayoutControls)
+7 Default Twitter Bootstrap layout regions/widgets, including sample ToolboxesConfig.config can be found here (https://github.com/jbokkers/SF-BOILERPLATED/tree/master/LayoutControls)
