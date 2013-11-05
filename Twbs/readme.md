@@ -2,7 +2,7 @@
 A full port of the Twitter Bootstrap 3 framework to be compatible with Sitefinity 6. 
 Empty and optimized starting point which is fully Bootstrap Responsive and Sitefinity mobile compatible.
   
-Compatibility: Sitefinity `6.x`. Twitter Bootstrap `3.0.0`.
+Compatibility: Sitefinity `6.x`. Twitter Bootstrap `3.0.1`.
   
 
 ## Quick start

@@ -16,7 +16,7 @@ Read the readme.md in each theme/framework folder for installation instructions.
 * The latest compatible jQuery via Sitefinity.
 * Support for .LESS and .CSS.
 
-## Twbs (Twitter Bootstrap Framework v`3.0.0`)
+## Twbs (Twitter Bootstrap Framework v`3.0.1`)
 
 * A Sitefinity optimized port of the Twitter Bootstrap project (https://github.com/twbs/bootstrap/).
 * HTML5 ready, with ARIA role definition and fallback browser support through Modernizr
@@ -41,7 +41,7 @@ All icons are included and referenced in the respective projects, the sitefinity
 
 ## LayoutControls
 * 7 Pre-built layout regions/widgets, compatible with Twitter Bootstrap v`2.3.1`and Sitefinity. 
-* 9 Pre-built layout regions/widgets, compatible with Twitter Bootstrap v`3.0.0`and Sitefinity. 
+* 9 Pre-built layout regions/widgets, compatible with Twitter Bootstrap v`3.0.1`and Sitefinity. 
 * Sample Toolboxesconfig.config file to register the regions with your Sitefinity project. 
 
 
