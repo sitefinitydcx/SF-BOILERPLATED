@@ -1,8 +1,8 @@
-# Sitefinity Twitter Bootstrap template and theme
+# Sitefinity Twitter Bootstrap 3 template and theme
 A full port of the Twitter Bootstrap 3 framework to be compatible with Sitefinity 6. 
 Empty and optimized starting point which is fully Bootstrap Responsive and Sitefinity mobile compatible.
   
-Compatibility: Sitefinity `6.x`. Twitter Bootstrap `3.0.1`.
+Compatibility: Sitefinity `6.x`. Twitter Bootstrap `3.0.2`.
   
 
 ## Quick start
@@ -59,7 +59,7 @@ Complete with extra scriptwrapper placeholder which won't output on live sites s
 
 ### KendoUI
 Kendo UI Web is now included by default and loaded from Sitefinity Resource to ensure proper compatibility.
-If you don't need/want Kendo UI remove script reference from .Masterpage and remove the KendoUI region from sfnormalize.less (or css file). 
+If you don't need/want Kendo UI remove script reference from .Masterpage and remove the KendoUI region from sfnormalize.less or css file (saves about 80Kb). 
 
 ### Javascript & jQuery
 jQuery is loaded from Sitefinity resource to ensure proper compatibility. 

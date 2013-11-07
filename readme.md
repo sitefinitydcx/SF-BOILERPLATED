@@ -16,7 +16,7 @@ Read the readme.md in each theme/framework folder for installation instructions.
 * The latest compatible jQuery via Sitefinity.
 * Support for .LESS and .CSS.
 
-## Twbs (Twitter Bootstrap Framework v`3.0.1`)
+## Twbs (Twitter Bootstrap Framework v`3.0.2`)
 
 * A Sitefinity optimized port of the Twitter Bootstrap project (https://github.com/twbs/bootstrap/).
 * HTML5 ready, with ARIA role definition and fallback browser support through Modernizr
