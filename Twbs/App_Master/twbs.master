@@ -25,7 +25,7 @@
     <title></title>
 </head>
 <!--  ========================================================================== -->
-<!--  upd: 11/05/2013 | Based on Twitter Bootstrap v3.0.1                        -->
+<!--  upd: 11/05/2013 | Based on Twitter Bootstrap v3.1.1                        -->
 <!--  ========================================================================== -->
 <!-- TODO: Change paths /Sitefinity/WebsiteTemplates/twbs appropiately           -->
 <!--  ========================================================================== -->
@@ -37,8 +37,8 @@
         <telerik:RadScriptManager ID="RadScriptManager1" CompositeScript-ScriptMode="Release" EnableScriptGlobalization="True" EnableScriptLocalization="False" runat="server" CompositeScript-NotifyScriptLoaded="True" LoadScriptsBeforeUI="True" OutputCompression="Forced" AjaxFrameworkMode="Disabled">
             <CompositeScript>
                 <Scripts>
-                    <asp:ScriptReference Name="MicrosoftAjax.js" Assembly="System.Web.Extensions" />
-                    <asp:ScriptReference Name="MicrosoftAjaxWebForms.js" Assembly="System.Web.Extensions" />
+                    <asp:ScriptReference Name="Telerik.Sitefinity.Resources.Scripts.MicrosoftAjax.js" Assembly="Telerik.Sitefinity.Resources" />
+                    <asp:ScriptReference Name="Telerik.Sitefinity.Resources.Scripts.MicrosoftAjaxWebForms.js" Assembly="Telerik.Sitefinity.Resources" />
                     <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" />
                     <asp:ScriptReference Path="~/App_Data/Sitefinity/WebsiteTemplates/twbs/JS/Modernizr-2.6.2.min.js" />
                     <asp:ScriptReference Name="Telerik.Sitefinity.Resources.Scripts.jquery-1.8.3.min.js" Assembly="Telerik.Sitefinity.Resources" />

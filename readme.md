@@ -6,17 +6,7 @@ Empty starting points for easy Sitefinity development including ports of HTML5Bo
 Read the readme.md in each theme/framework folder for installation instructions.
 
 
-## Boilerplate (HTML5Boilerplate  v`4.3.0`)
-
-* A Sitefinity optimized port of the HTML5 Boilerplate project [http://html5boilerplate.com]
-* HTML5 ready, with ARIA role definition and fallback browser support through Modernizr
-* Based on and compatible with the standard Sitefinity lay-out region editor.
-* Cross browser CSS normalizations and vertical rhythm.
-* Responsive design & mobile friendly with Sitefinity column support
-* The latest compatible jQuery via Sitefinity.
-* Support for .LESS and .CSS.
-
-## Twbs (Twitter Bootstrap Framework v`3.0.2`)
+## Twbs (Twitter Bootstrap Framework v`3.1.1`)
 
 * A Sitefinity optimized port of the Twitter Bootstrap project (https://github.com/twbs/bootstrap/).
 * HTML5 ready, with ARIA role definition and fallback browser support through Modernizr
@@ -31,6 +21,16 @@ Read the readme.md in each theme/framework folder for installation instructions.
 * Compatible with Bootstrap responsive grid and Sitefinity's region editor (additional layout widgets included)
 * Twitter Bootstrap is 'untouched' to allow for easy updating (NuGet/GitHub) or use with SASS port.
 * Default template included.
+
+## Boilerplate (HTML5Boilerplate  v`4.3.0`)
+
+* A Sitefinity optimized port of the HTML5 Boilerplate project [http://html5boilerplate.com]
+* HTML5 ready, with ARIA role definition and fallback browser support through Modernizr
+* Based on and compatible with the standard Sitefinity lay-out region editor.
+* Cross browser CSS normalizations and vertical rhythm.
+* Responsive design & mobile friendly with Sitefinity column support
+* The latest compatible jQuery via Sitefinity.
+* Support for .LESS and .CSS.
 
 ## Sitefinity-icons
 * Precomposed icons for the iPhone/iPad & Android devices.
